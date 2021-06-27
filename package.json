@@ -1,7 +1,7 @@
 {
   "version": "3.0.7",
-  "name": "gatsby-starter-lumen",
-  "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
+  "name": "Shaun Chuah",
+  "description": "Articles by Shaun Chuah",
   "main": "n/a",
   "scripts": {
     "develop": "yarn clean && gatsby develop",
@@ -16,8 +16,8 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
-  "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
+  "repository": "https://github.com/shaunchuah/shaunchuah.github.io",
+  "author": "Shaun Chuah <chershiong@gmail.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -52,6 +52,7 @@
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-netlify": "^2.11.1",
     "gatsby-plugin-netlify-cms": "^4.10.1",
+    "gatsby-plugin-netlify-cms-paths": "^1.3.0",
     "gatsby-plugin-offline": "^3.10.2",
     "gatsby-plugin-optimize-svgs": "^1.0.5",
     "gatsby-plugin-react-helmet": "^3.10.0",
