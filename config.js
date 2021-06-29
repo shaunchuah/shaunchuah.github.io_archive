@@ -1,50 +1,51 @@
-'use strict';
+"use strict";
 
 module.exports = {
-  url: 'https://shaunchuah.github.io',
-  pathPrefix: '/',
-  title: 'Shaun Chuah',
-  subtitle: 'Gastroenterologist by day. Hobbyist coder by night.',
-  copyright: '© All rights reserved.',
-  disqusShortname: '',
+  url: "https://shaunchuah.github.io",
+  pathPrefix: "/",
+  title: "Shaun Chuah",
+  subtitle:
+    "Gastroenterology registrar. Occasional web developer. Interested in technology.",
+  copyright: "© All rights reserved.",
+  disqusShortname: "",
   postsPerPage: 5,
-  googleAnalyticsId: '',
+  googleAnalyticsId: "",
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: "Articles",
+      path: "/",
     },
-    // {
-    //   label: 'About me',
-    //   path: '/pages/about'
-    // },
-    // {
-    //   label: 'Contact me',
-    //   path: '/pages/contacts'
-    // }
+    {
+      label: "Publications",
+      path: "/pages/publications",
+    },
+    {
+      label: "About Me",
+      path: "/pages/about",
+    },
   ],
   author: {
-    name: 'Shaun Chuah',
-    photo: '/photo.jpg',
-    bio: 'Gastroenterologist by day. Hobbyist coder by night.',
+    name: "Shaun Chuah",
+    photo: "/photo.jpg",
+    bio: "Gastroenterology registrar. Occasional web developer. Interested in technology.",
     contacts: {
-      email: 'chershiong@gmail.com',
-      facebook: '#',
-      telegram: '',
-      twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
-      medium: '',
-    }
-  }
+      email: "chershiong@gmail.com",
+      facebook: "chershiong",
+      telegram: "",
+      twitter: "chershiong",
+      github: "shaunchuah",
+      rss: "",
+      vkontakte: "",
+      linkedin: "",
+      instagram: "chershiong",
+      line: "",
+      gitlab: "",
+      weibo: "",
+      codepen: "",
+      youtube: "",
+      soundcloud: "",
+      medium: "",
+    },
+  },
 };
