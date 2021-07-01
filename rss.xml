@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Jun 2021 19:39:37 GMT</lastBuildDate><item><title><![CDATA[The State of Modern Web Development]]></title><description><![CDATA[I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share...]]></description><link>https://shaunchuah.github.io/posts/state-of-modern-web-development</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/state-of-modern-web-development</guid><pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 01 Jul 2021 19:45:53 GMT</lastBuildDate><item><title><![CDATA[4 Major Architectural Approaches to Building Websites in 2021]]></title><description><![CDATA[This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves: What are the real differences in the frameworks?]]></description><link>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4d096966b4a7b24584fccb56be7c0435/b17f8/webarchitecture.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 65.83333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB5SaZUKUB/8QAFxAAAwEAAAAAAAAAAAAAAAAAARAiQf/aAAgBAQABBQLEBC//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPwGH/8QAFhAAAwAAAAAAAAAAAAAAAAAAACAx/9oACAEBAAY/Alp//8QAGhABAQACAwAAAAAAAAAAAAAAAQAQESFRcf/aAAgBAQABPyEMXwg2g5nfa//aAAwDAQACAAMAAAAQTw//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCn/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAEh/9oACAECAQE/EK4//8QAGRABAQEBAQEAAAAAAAAAAAAAAREAITFh/9oACAEBAAE/EFuFb3A3Bvt97lI+1cNXSYCb/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/4d096966b4a7b24584fccb56be7c0435/8ac56/webarchitecture.webp 240w,
+/static/4d096966b4a7b24584fccb56be7c0435/d3be9/webarchitecture.webp 480w,
+/static/4d096966b4a7b24584fccb56be7c0435/e46b2/webarchitecture.webp 960w,
+/static/4d096966b4a7b24584fccb56be7c0435/f992d/webarchitecture.webp 1440w,
+/static/4d096966b4a7b24584fccb56be7c0435/fad48/webarchitecture.webp 1600w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/4d096966b4a7b24584fccb56be7c0435/09b79/webarchitecture.jpg 240w,
+/static/4d096966b4a7b24584fccb56be7c0435/7cc5e/webarchitecture.jpg 480w,
+/static/4d096966b4a7b24584fccb56be7c0435/6a068/webarchitecture.jpg 960w,
+/static/4d096966b4a7b24584fccb56be7c0435/644c5/webarchitecture.jpg 1440w,
+/static/4d096966b4a7b24584fccb56be7c0435/b17f8/webarchitecture.jpg 1600w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/4d096966b4a7b24584fccb56be7c0435/6a068/webarchitecture.jpg&quot;
+            alt=&quot;Web Architecture in 2021&quot;
+            title=&quot;Web Architecture in 2021&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What are the real differences in the frameworks?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Having spent the last year getting up to speed with the state of the web, I’m going to summarise the 4 major architectural approaches to launching a new website in 2021. Although I write about them as discrete categories, in reality they exist on a continuum and some frameworks will blur the lines between these categories (eg. NextJS). For the beginner though, it is helpful to have a rough overview of the major choices available to you.&lt;/p&gt;
+&lt;h2 id=&quot;1-traditional-htmlcssjavascript&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-traditional-htmlcssjavascript&quot; aria-label=&quot;1 traditional htmlcssjavascript permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#1 Traditional HTML/CSS/Javascript&lt;/h2&gt;
+&lt;p&gt;The original way websites were build. Just pure html, css and maybe a bit of javascript. Throw in a css framework or sprinkle a bit of javascript. Ideal for one-page brochure websites which do not need constant updates of content, at a stretch maybe up to 2-3 pages. If you’re planning anything bigger, try one of the other options below.&lt;/p&gt;
+&lt;h3 id=&quot;deployment-methods&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#deployment-methods&quot; aria-label=&quot;deployment methods permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment Methods&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Grab index.html and all associated files and SFTP it to apache or nginx or CDN of your choice&lt;/li&gt;
+&lt;li&gt;A better way - Setup a git repo on github and use git clone into your apache/nginx server. Makes updating website a matter of running git pull.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt; Fast to develop, extremely easy to customise, easy to deploy, easy to scale.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt; Does not suit websites which have more than one page or content that needs updated regularly.&lt;/p&gt;
+&lt;h2 id=&quot;2-full-stack-cms&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-full-stack-cms&quot; aria-label=&quot;2 full stack cms permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#2 Full Stack CMS&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Examples: Wordpress, Django, Ruby on Rails, Laravel&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;These are the traditional server side frameworks which still run most of the web today. The magic here is that the website is connected to a backend database which can hold different content and render the content into html based on templates. These frameworks also allow for user authentication and storing things like contact form data.&lt;/p&gt;
+&lt;h3 id=&quot;deployment-methods-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#deployment-methods-1&quot; aria-label=&quot;deployment methods 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment Methods&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Usually custom to the framework. Generally requires installing a few pieces of software on your server. Think of the traditional LAMP stack (Linux Apache MySql PHP).&lt;/li&gt;
+&lt;li&gt;Use docker to automate the framework deployment steps.&lt;/li&gt;
+&lt;li&gt;Some webhost may offer one-click deployment eg of Wordpress&lt;/li&gt;
+&lt;li&gt;Platform as a service eg. Heroku&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt; Well used, well documented, tried and tested way of having a website hosting content which can be updated easily.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt; Need to deploy, monitor and look after database backend.&lt;/p&gt;
+&lt;h2 id=&quot;3-decoupled-javascript-frontendapi-backend&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-decoupled-javascript-frontendapi-backend&quot; aria-label=&quot;3 decoupled javascript frontendapi backend permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#3 Decoupled Javascript Frontend/API Backend&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Examples: React/Vue + Django Rest Framework/Laravel/Ruby on Rails, React/Vue/Mobile Frontend + AWS Amplify/Google Firebase (Backend as a service)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The trendiest way to build websites in 2021. Pick a frontend javascript framework and communicate with databases via an API gateway. Makes for very slick websites and web applications on par with desktop apps.&lt;/p&gt;
+&lt;h3 id=&quot;deployment-methods-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#deployment-methods-2&quot; aria-label=&quot;deployment methods 2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment Methods&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;More involved than #2. Deploy both the frontend and the backend.&lt;/li&gt;
+&lt;li&gt;Docker is highly recommended here.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Advantages:&lt;/strong&gt; Amazingly slick and interactive websites. Easy to split work between multiple developers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt; Need to deploy, monitor and look after two projects. Double the work of the traditional frameworks.&lt;/p&gt;
+&lt;h2 id=&quot;4-full-jamstack-static-site-generation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-full-jamstack-static-site-generation&quot; aria-label=&quot;4 full jamstack static site generation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;#4 Full JAMStack Static Site Generation&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Examples: Hugo, Jekyll, GatsbyJS, Docusaurus, VuePress, Gridsome&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Number 3 and 4 are similar in concepts at first glance. The slight difference is that these full on static site generators are more suited for webpages where the content can be preloaded (eg blogs, articles) and less suited for web applications which have users interacting with the database (such as chat apps/social media).&lt;/p&gt;
+&lt;p&gt;The key concept is that before the site is deployed, the engine pulls all the content and all the code and spits out html/javascript/css files. These files are then deployed like #1 to a server or to a CDN for global scaling.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt; Can create single page websites (like this blog) which do not reload the browser when navigating between pages. Makes the website feel really slick.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt; This is for websites rather than web applications (use #3 instead). Initial learning curve on the generator of choice.&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The right architectural choice will depend on the scope of what you’re building and the expected scale/audience. Brochure websites are different to blogs which are different to web applications.&lt;/p&gt;
+&lt;p&gt;Something important to note is that web projects are often unpredictable and tend to grow in size and complexity with time. You may reach a point where you need to consider a rework of the architecture (usually this is a good problem to have if your site traffic is growing!).&lt;/p&gt;
+&lt;p&gt;Choosing the right approach and avoiding premature optimisation will avoid wasted effort and speed your time to deployment.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The State of Modern Web Development]]></title><description><![CDATA[I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share...]]></description><link>https://shaunchuah.github.io/posts/state-of-modern-web-development</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/state-of-modern-web-development</guid><pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
