@@ -3,13 +3,17 @@
 <url> <loc>https://shaunchuah.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/posts/state-of-modern-web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/pages/publications/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shaunchuah.github.io/posts/state-of-modern-web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/tag/bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/tag/docker</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/category/bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/category/web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

@@ -105,6 +105,18 @@
   Link: </component---src-templates-page-template-js-8b64bb5b6162dcc78f90.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/state-of-modern-web-development
+  Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-59c841fc02b59dfdfd3f.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-67719cedfad1054b5d2e.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/state-of-modern-web-development/page-data.json>; rel=preload; as=fetch; crossorigin
 /pages/publications/
   Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -129,7 +141,7 @@
   Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/architectural-approaches-to-building-websites/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/state-of-modern-web-development
+/posts/getting-started-with-docker-for-bioinformatics
   Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
   Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
@@ -140,7 +152,19 @@
   Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-67719cedfad1054b5d2e.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/state-of-modern-web-development/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/getting-started-with-docker-for-bioinformatics/page-data.json>; rel=preload; as=fetch; crossorigin
+/tag/bioinformatics
+  Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-59c841fc02b59dfdfd3f.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-67719cedfad1054b5d2e.js>; rel=preload; as=script
+  Link: </component---src-templates-tag-template-js-2891a77df03c6e824b15.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/tag/bioinformatics/page-data.json>; rel=preload; as=fetch; crossorigin
 /tag/css
   Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -153,6 +177,18 @@
   Link: </component---src-templates-tag-template-js-2891a77df03c6e824b15.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/tag/css/page-data.json>; rel=preload; as=fetch; crossorigin
+/tag/docker
+  Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-59c841fc02b59dfdfd3f.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-67719cedfad1054b5d2e.js>; rel=preload; as=script
+  Link: </component---src-templates-tag-template-js-2891a77df03c6e824b15.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/tag/docker/page-data.json>; rel=preload; as=fetch; crossorigin
 /tag/javascript
   Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -189,6 +225,18 @@
   Link: </component---src-templates-tag-template-js-2891a77df03c6e824b15.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/tag/web-development/page-data.json>; rel=preload; as=fetch; crossorigin
+/category/bioinformatics
+  Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-59c841fc02b59dfdfd3f.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-67719cedfad1054b5d2e.js>; rel=preload; as=script
+  Link: </component---src-templates-category-template-js-aa2de9772640235b1335.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/category/bioinformatics/page-data.json>; rel=preload; as=fetch; crossorigin
 /category/web-development
   Link: </webpack-runtime-bae1623be3df68c7ff78.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script

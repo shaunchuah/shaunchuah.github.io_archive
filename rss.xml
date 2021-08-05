@@ -1,4 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 05 Jul 2021 22:57:33 GMT</lastBuildDate><item><title><![CDATA[4 Major Architectural Approaches to Building Websites in 2021]]></title><description><![CDATA[This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves: What are the real differences in the frameworks?]]></description><link>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Aug 2021 21:35:35 GMT</lastBuildDate><item><title><![CDATA[Getting Started with Docker for Bioinformatics]]></title><description><![CDATA[Stop wasting your time installing every single bioinformatic tool. Just call the container in from the cloud and go.]]></description><link>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4dedca9e59f21d494ce13f7854a17c32/644c5/containers.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUG/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAZ6nOMKaVxn/xAAbEAACAgMBAAAAAAAAAAAAAAABAgMhAAQREv/aAAgBAQABBQLWfjs4AkkPtLNYRf8A/8QAFREBAQAAAAAAAAAAAAAAAAAAECH/2gAIAQMBAT8Bh//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAIDAAAAAAAAAAAAAAAAAAEQESBR/9oACAEBAAY/Ao1Gn//EABsQAAICAwEAAAAAAAAAAAAAAAABESExUZFx/9oACAEBAAE/Ib06y9G9yh6ayDpT6Ro+itun/9oADAMBAAIAAwAAABAA3//EABYRAQEBAAAAAAAAAAAAAAAAAAEAQf/aAAgBAwEBPxANSX//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFB/9oACAECAQE/EFeW3//EABwQAQADAAIDAAAAAAAAAAAAAAEAESExQYHw8f/aAAgBAQABPxA6ADy8iXNkwL5ZTMQ18iIBlwWA6+uotbnNj//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/4dedca9e59f21d494ce13f7854a17c32/8ac56/containers.webp 240w,
+/static/4dedca9e59f21d494ce13f7854a17c32/d3be9/containers.webp 480w,
+/static/4dedca9e59f21d494ce13f7854a17c32/e46b2/containers.webp 960w,
+/static/4dedca9e59f21d494ce13f7854a17c32/f992d/containers.webp 1440w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/4dedca9e59f21d494ce13f7854a17c32/09b79/containers.jpg 240w,
+/static/4dedca9e59f21d494ce13f7854a17c32/7cc5e/containers.jpg 480w,
+/static/4dedca9e59f21d494ce13f7854a17c32/6a068/containers.jpg 960w,
+/static/4dedca9e59f21d494ce13f7854a17c32/644c5/containers.jpg 1440w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/4dedca9e59f21d494ce13f7854a17c32/6a068/containers.jpg&quot;
+            alt=&quot;Docker for Bioinformatics&quot;
+            title=&quot;Docker for Bioinformatics&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Next generation sequencing is becoming much more accessible to researchers in 2021. As you stare at the freshly minted .fastq files, you’re wondering - how do I go about analysing this?&lt;/p&gt;
+&lt;p&gt;After a stint on Google, you decide that you want to run bwa-mem/bowtie2 and then send the output into samtools. Next thing you know, you’re trying to install half a dozen bioinformatic programs on your new ubuntu machine. You run into dependency hell or else conda seems to be stuck solving god knows what and this quickly eats up half your day.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Stop wasting your time installing software - there is a secret to bypass all of this - Docker!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 601px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7bcbbab5e4c7c9a94f7a32016ae8f827/d8f62/docker2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 71.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADq0lEQVQ4y0VUfVBUVRQ/u+4fjn84U2NIjo3Ke/fe99bQUZEcHLVmLMsIS6xGbZpAjSTFD0T5XCmYUtSSYWFXiD5oEr+S0izFwsGUFFdc/MxUAsQvdgWMGgH3vdO5D9Q7c+bce995v3N+5+MC0NKjssE5Lg2ckWmgR7tAj8mDcRAJYt43IN7ZFcdcjciyGpAvOeDiSw8BX1rt4GvqQLz7vV0sqLSRDYj5laCRvbWcEzPBKZaDU02WgMP0qflh+vQN4ZEwcbB4s2IJyz2PLMcvAfMJDHjyYQeB2LTXy0Gfkgta/Nc2EhAJPwBE7ETgSb849OcLQCzY8Rx5bmXr6q/zlCOtFFUL6SDL9D1gmadRJP6YL6PhydWDyRa0N76M0mdseEqbXUJMdjuIkc0CJABgGackxRj20QW0JNuP6id/Icvwkb7Sy3LPIX//52yKFPjin2AygIOtO3mTpf1RG1GFoL3qAe3lIgC29gSIRfuW85VHj/APDtbx1GMGSz9l8A9/NShCgyI06CeDnBLggSs89fhBYuTVYr3RakGzoW65jtrcr5YR/fHaK+5wUD+9CgS2nX18EZnrLJI22XrSWWeQ5V9Gll7fH6mrUTpCdVMzktN/IuGF4WR3Q/F2oVrwd/99Ss0lqtSeOL7stwYLIO1EnwSgfJl89THTKkTqcTr7TEmdr/o9xNafM/nK2k6ivZVSE1CL2gmsRaapnZi+JXOHqpsuP79hqFtv4kPhhQP7wluP7gb2pqWL7qCyrUs6v0D5m6lPygonR5TD7DO3lbJuVErumoqnw1Q9HTimpANHuDsxgrQ8K4/FtLS09XbdV7e0okioShKL98N4eAIo73aghFerxUEkCanFAVMpDpoTyoKYuKcdny29ixFu65sUc0Dkvk8Cs7Un/bLaIxFtYl6FXSzcCbLCKUQXldJ7vaK0C8OLOs2Y8oBZfKgZo8o7cLSbQCiih6AUXZ+y7R5Ss4e0uNJoqjCI96rsWlxZ/6Q4RyYO5en1rcpnbTg871rvjM0XQ9O8bUZYIdFzBySQQVGHCOgB0ZRagvWJt797TfYjFW0QFVIOR//YDX2pHMJe9E5fVHC0+7CvDe93/4fBHsQ5e//F0R5qCW+nlUfVHUB1YxPSJNVpsZ5JxAyozQY9jQijrlFjxw/McWxOjX1qYiXEJm1XNn/rc++tbWpo/PN2S43/Vk/8F009Y/Iut/Acv5+vqK2gcZs19pmEJ+khGDJLvgETMugRcT5+FGj9D6V0JAJZu0fzAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/7bcbbab5e4c7c9a94f7a32016ae8f827/8ac56/docker2.webp 240w,
+/static/7bcbbab5e4c7c9a94f7a32016ae8f827/d3be9/docker2.webp 480w,
+/static/7bcbbab5e4c7c9a94f7a32016ae8f827/84ad9/docker2.webp 601w&quot;
+              sizes=&quot;(max-width: 601px) 100vw, 601px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/7bcbbab5e4c7c9a94f7a32016ae8f827/8ff5a/docker2.png 240w,
+/static/7bcbbab5e4c7c9a94f7a32016ae8f827/e85cb/docker2.png 480w,
+/static/7bcbbab5e4c7c9a94f7a32016ae8f827/d8f62/docker2.png 601w&quot;
+            sizes=&quot;(max-width: 601px) 100vw, 601px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/7bcbbab5e4c7c9a94f7a32016ae8f827/d8f62/docker2.png&quot;
+            alt=&quot;Docker logo&quot;
+            title=&quot;Docker logo&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;There are Docker containers for most bioinformatic tools. Instead of installing software, all you have to do is specify the Docker image and you’re ready to run the program!&lt;/p&gt;
+&lt;h2 id=&quot;heres-the-secret&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#heres-the-secret&quot; aria-label=&quot;heres the secret permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Here’s the secret&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run -it -v &amp;#39;&amp;lt;path to your files&amp;gt;:/data&amp;#39; &amp;lt;container of your choice&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This immediately spins up the shell version of the bioinformatic tool and you can immediately run the commands needed to execute the program.&lt;/p&gt;
+&lt;h3 id=&quot;bowtie2-example&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#bowtie2-example&quot; aria-label=&quot;bowtie2 example permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Bowtie2 Example&lt;/h3&gt;
+&lt;p&gt;Assuming your directory structure looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sequencing_data/
+├─ reads/
+│  ├─ sample_id/
+│  │  ├─ read_1.fastq.gz
+│  │  ├─ read_2.fastq.gz
+├─ bowtie2/
+│  ├─ GRCh38_bowtie2.fa&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run -it -v &amp;#39;~/sequencing_data:/data&amp;#39; biocontainers/bowtie2:v2.4.1_cv1
+
+bowtie2 -t -p 4 -x bowtie2/GRCh38_bowtie2 -1 reads/sample_id/read_1.fastq.gz -2 reads/sample_id/read_2.fastq.gz -S output.sam&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;heres-the-breakdown-of-the-magic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#heres-the-breakdown-of-the-magic&quot; aria-label=&quot;heres the breakdown of the magic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Here’s the breakdown of the magic&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;-it&lt;/strong&gt;: This opens an interactive shell into the running container&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;-v ‘path-you-want-to-access:/data’&lt;/strong&gt;: This is the key command that binds your computer’s files into the container. For most biocontainers the target is /data but this may need tweaked depending on the container. This allows the program in the container to access and compute the files on your local computer. Understanding this was the key bit that unlocked the power of Docker in my mind.&lt;/p&gt;
+&lt;h2 id=&quot;how-to-find-docker-containers&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-find-docker-containers&quot; aria-label=&quot;how to find docker containers permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to find Docker containers&lt;/h2&gt;
+&lt;p&gt;For most things, just google the tool you want and add Docker eg. ‘bwa docker’, ‘metaphlan docker’&lt;/p&gt;
+&lt;p&gt;Here are a list of public container registries with amazing software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://hub.docker.com/u/biobakery&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://hub.docker.com/u/biobakery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hub.docker.com/u/biocontainers&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://hub.docker.com/u/biocontainers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://hub.docker.com/u/staphb&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://hub.docker.com/u/staphb&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Give this a try - 10-15 mins of experimenting will save you days of time and you will never have to manage dependencies anymore!&lt;/p&gt;
+&lt;h2 id=&quot;what-next&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-next&quot; aria-label=&quot;what next permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What next?&lt;/h2&gt;
+&lt;p&gt;Once you have got your head round using Docker for your bioinformatics, the next thing that comes to mind is to automate the containers locally on your computer so that you can easily run 100 read files at the touch of a button. I will cover this in a future article.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4 Major Architectural Approaches to Building Websites in 2021]]></title><description><![CDATA[This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves: What are the real differences in the frameworks?]]></description><link>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
