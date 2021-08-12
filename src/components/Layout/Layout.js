@@ -1,23 +1,18 @@
 // @flow strict
-import React from 'react';
-import Helmet from 'react-helmet';
-import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import type { Node as ReactNode } from "react";
+import { useSiteMetadata } from "../../hooks";
+import styles from "./Layout.module.scss";
 
 type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage?: string
+  socialImage?: string,
 };
 
-const Layout = ({
-  children,
-  title,
-  description,
-  socialImage = ''
-}: Props) => {
+const Layout = ({ children, title, description, socialImage = "" }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage || author.photo;
   const metaImageUrl = url + metaImage;
@@ -34,6 +29,10 @@ const Layout = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
+        <meta
+          name="google-site-verification"
+          content="PssJHrMlknaDqnY9daDTb6-0T4IoxzcuLx6X8NUJD38"
+        />
       </Helmet>
       {children}
     </div>
