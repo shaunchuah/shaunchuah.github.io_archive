@@ -1,4 +1,189 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 05 Aug 2021 21:35:35 GMT</lastBuildDate><item><title><![CDATA[Getting Started with Docker for Bioinformatics]]></title><description><![CDATA[Stop wasting your time installing every single bioinformatic tool. Just call the container in from the cloud and go.]]></description><link>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 12 Aug 2021 18:03:14 GMT</lastBuildDate><item><title><![CDATA[How to Create Your Bioinformatics Pipeline with Nextflow]]></title><description><![CDATA[Now you know how to run bioinformatics software in Docker containers, it's time to connect them up.]]></description><link>https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</guid><pubDate>Thu, 12 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7ac17c4f63611789bd96206229d988b0/eea4a/pipeline.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEDAv/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAGG4VLYiL//xAAZEAACAwEAAAAAAAAAAAAAAAABAgARMRL/2gAIAQEAAQUCWGuW0QC0O//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAACAwEAAAAAAAAAAAAAAAABEAARIUH/2gAIAQEABj8C7AdVP//EABsQAQACAgMAAAAAAAAAAAAAAAEAIRFBMVHB/9oACAEBAAE/ITh8Skt2UYOILw5jAGnuN0n/2gAMAwEAAgADAAAAEIgP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARMf/aAAgBAwEBPxAcg52//8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/EImv/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBYXH/2gAIAQEAAT8QBFwJ931Et0i6Lx72LIQ8VEtYB1PIMpso0rZetd032f/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/7ac17c4f63611789bd96206229d988b0/8ac56/pipeline.webp 240w,
+/static/7ac17c4f63611789bd96206229d988b0/d3be9/pipeline.webp 480w,
+/static/7ac17c4f63611789bd96206229d988b0/e46b2/pipeline.webp 960w,
+/static/7ac17c4f63611789bd96206229d988b0/af3f0/pipeline.webp 1280w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/7ac17c4f63611789bd96206229d988b0/09b79/pipeline.jpg 240w,
+/static/7ac17c4f63611789bd96206229d988b0/7cc5e/pipeline.jpg 480w,
+/static/7ac17c4f63611789bd96206229d988b0/6a068/pipeline.jpg 960w,
+/static/7ac17c4f63611789bd96206229d988b0/eea4a/pipeline.jpg 1280w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/7ac17c4f63611789bd96206229d988b0/6a068/pipeline.jpg&quot;
+            alt=&quot;Create your bioinformatics pipeline&quot;
+            title=&quot;Create your bioinformatics pipeline&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Now you know how to run bioinformatics software in Docker containers, it’s time to connect them up. If you’ve missed the last post the link is here: &lt;a href=&quot;/posts/getting-started-with-docker-for-bioinformatics&quot;&gt;Getting started with Docker for bioinformatics.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;content-overview&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#content-overview&quot; aria-label=&quot;content overview permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Content Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;What is a pipeline?&lt;/li&gt;
+&lt;li&gt;Nextflow vs Snakemake&lt;/li&gt;
+&lt;li&gt;Using Nextflow and Docker containers to create your pipeline&lt;/li&gt;
+&lt;li&gt;Summary&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;what-is-a-pipeline-anyway&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-is-a-pipeline-anyway&quot; aria-label=&quot;what is a pipeline anyway permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is a pipeline anyway?&lt;/h2&gt;
+&lt;p&gt;The term ‘pipeline’ is thrown around a lot in bioinformatics. In simple terms, it refers to the programs that have to be run in a certain order to complete the analysis. Some of these programs take the outputs of earlier programs and process them in order to achieve a specific objective.&lt;/p&gt;
+&lt;p&gt;This can be as simple as a couple of programs or it can become a messy spider web. A basic example would be: raw fastq files from the sequencer —&gt; passing it through an aligner against the human genome —&gt; variant calling.&lt;/p&gt;
+&lt;p&gt;NF core have a nice set of pipelines &lt;a href=&quot;https://nf-co.re/pipelines&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;here&lt;/a&gt; including much more complex ones.&lt;/p&gt;
+&lt;h2 id=&quot;how-to-get-started&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-to-get-started&quot; aria-label=&quot;how to get started permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How to get started&lt;/h2&gt;
+&lt;p&gt;There are two key frameworks that I will point you to: &lt;a href=&quot;https://www.nextflow.io/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;nextflow&lt;/a&gt; and &lt;a href=&quot;https://snakemake.readthedocs.io/en/stable/%5D&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;snakemake&lt;/a&gt;. These are the programs that will run your programs for you and orchestrate the input and output files.&lt;/p&gt;
+&lt;h2 id=&quot;nextflow-vs-snakemake&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nextflow-vs-snakemake&quot; aria-label=&quot;nextflow vs snakemake permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nextflow vs Snakemake&lt;/h2&gt;
+&lt;p&gt;Disclaimer: this is my personal opinion on this topic. Try both and make up your mind as to which suits your thought process better.&lt;/p&gt;
+&lt;h3 id=&quot;1-the-programming-language-difference-doesnt-matter&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-the-programming-language-difference-doesnt-matter&quot; aria-label=&quot;1 the programming language difference doesnt matter permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. The programming language difference doesn’t matter.&lt;/h3&gt;
+&lt;p&gt;Snakemake is based on python whereas nextflow uses groovy (which is like python for java). Initially when I first came across these comparisons I immediately jumped to snakemake as I’m pretty comfortable with python.&lt;/p&gt;
+&lt;p&gt;Having tried both now, I would say that since you need to learn the pipeline syntax anyway, the actual difference between python and groovy is pretty minimal.&lt;/p&gt;
+&lt;h3 id=&quot;2-the-biggest-difference-is-the-thinking-direction-of-the-pipeline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-the-biggest-difference-is-the-thinking-direction-of-the-pipeline&quot; aria-label=&quot;2 the biggest difference is the thinking direction of the pipeline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. The biggest difference is the ‘thinking direction’ of the pipeline&lt;/h3&gt;
+&lt;p&gt;Let me explain what I mean. In snakemake you have to ‘think backwards’ and work your way from the desired output towards the input. I find nextflow way more intuitive in that you think about your pipeline in sequence of how you run your programs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Here’s how you have to think in snakemake:&lt;/strong&gt; I need output C which comes from program B and to get program B to run you need the output of program A.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Compared to nextflow:&lt;/strong&gt; With my input files I run it in program A and then take it to program B. Output C will result.&lt;/p&gt;
+&lt;h3 id=&quot;3-why-i-switched-to-nextflow-the-separation-of-how-the-pipeline-is-run-from-what-the-pipeline-is&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-why-i-switched-to-nextflow-the-separation-of-how-the-pipeline-is-run-from-what-the-pipeline-is&quot; aria-label=&quot;3 why i switched to nextflow the separation of how the pipeline is run from what the pipeline is permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Why I switched to Nextflow: The separation of how the pipeline is run from what the pipeline is&lt;/h3&gt;
+&lt;p&gt;The key reason why I switched from snakemake to nextflow is ‘the decoupling of pipeline execution’ or in plain terms, the separation of where and how your pipeline is run and what the pipeline actually does. The series of steps is described in the main file while the execution can be controlled by the configuration. We will cover pipeline execution in a separate article.&lt;/p&gt;
+&lt;h2 id=&quot;nextflow-pipeline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#nextflow-pipeline&quot; aria-label=&quot;nextflow pipeline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nextflow Pipeline&lt;/h2&gt;
+&lt;p&gt;It is now time to go into more detail on setting up your pipeline in nextflow. Here’s an example pipeline which takes in Illumina paired reads, runs them through fastqc and bowtie2 and perform some simple statistics on the aligned file.&lt;/p&gt;
+&lt;h3 id=&quot;prerequisites&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#prerequisites&quot; aria-label=&quot;prerequisites permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prerequisites&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Nextflow&lt;/li&gt;
+&lt;li&gt;Install Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;1-set-up-and-define-your-input-and-outputs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-set-up-and-define-your-input-and-outputs&quot; aria-label=&quot;1 set up and define your input and outputs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Set up and define your input and outputs&lt;/h3&gt;
+&lt;p&gt;First we set up a couple of parameters that can be easily changed depending on whether you are running test files vs actual data. These parameters can be modified in your config profiles.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;// main.nf file
+#!/usr/bin/env nextflow
+
+// PIPELINE PARAMETERS HERE
+
+// Input Files
+params.reads = &amp;quot;$baseDir/data/*/*_{R1,R2}_*.fastq.gz&amp;quot;
+
+// Report Directory
+params.outdir = &amp;#39;reports&amp;#39;
+
+// Reference Genomes
+params.bowtie2_reference_index = &amp;quot;$baseDir/reference_db/bowtie2/bt2_index.tar.gz&amp;quot;
+bowtie2_db_ch = Channel.value(file(&amp;quot;${params.bowtie2_reference_index}&amp;quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;2-create-channels-and-feed-your-input-into-them&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-create-channels-and-feed-your-input-into-them&quot; aria-label=&quot;2 create channels and feed your input into them permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Create ‘channels’ and feed your input into them&lt;/h3&gt;
+&lt;p&gt;In nextflow, there is this concept of ‘channels’. The basic premise is simple - each channel represents one file that can only be consumed once (unless it’s a ‘value channel’). Think of channels as pipes that you can feed files into which can be used only once.&lt;/p&gt;
+&lt;p&gt;In this example, we generate the channels using the fromFilePairs method and create 2 channels - &lt;code class=&quot;language-text&quot;&gt;fastqc_reads&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;reads_for_alignment&lt;/code&gt;. *side note this is using the standard nextflow language rather than their newer DSL2.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;reads = Channel.fromFilePairs(params.reads)
+reads.into { fastqc_reads; reads_for_alignment }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;3-now-lets-have-a-look-at-our-first-process-and-break-it-down&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-now-lets-have-a-look-at-our-first-process-and-break-it-down&quot; aria-label=&quot;3 now lets have a look at our first process and break it down permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Now let’s have a look at our first process and break it down&lt;/h3&gt;
+&lt;p&gt;Here is the process block - this process is named &lt;code class=&quot;language-text&quot;&gt;fastqc_run&lt;/code&gt; but you can change this to whatever name suits.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;process fastqc_run {
+    publishDir &amp;quot;$params.outdir/fastqc/$sample_id/&amp;quot;, mode: &amp;#39;copy&amp;#39;
+    container &amp;#39;biocontainers/fastqc:v0.11.9_cv8&amp;#39;
+    cpus 16
+
+    input:
+    tuple val(sample_id), file(reads_file) from fastqc_reads
+
+    output:
+    file &amp;quot;*_fastqc.{zip,html}&amp;quot;
+
+    script:
+    &amp;quot;&amp;quot;&amp;quot;
+    fastqc $reads_file -o . --threads ${task.cpus}
+    &amp;quot;&amp;quot;&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In general, there are 4 components to each process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A configuration block&lt;/li&gt;
+&lt;li&gt;Process inputs&lt;/li&gt;
+&lt;li&gt;Process outputs&lt;/li&gt;
+&lt;li&gt;Script that runs the desired program&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let’s break down the above process codeblock into the 4 components.&lt;/p&gt;
+&lt;h4 id=&quot;configuration&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#configuration&quot; aria-label=&quot;configuration permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Configuration&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  publishDir &quot;$params.outdir/fastqc/$sample_id/&quot;, mode: &apos;copy&apos;
+  container &apos;biocontainers/fastqc:v0.11.9_cv8&apos;
+  cpus 16&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;publishDir&lt;/code&gt; This allows you to copy the output files of this process to a desired location for easy access. Note that by default it creates a shortcut link to the actual file location and you have to explicitly specify for it to copy and give you the actual file.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;container&lt;/code&gt; &lt;strong&gt;This is where the real magic happens.&lt;/strong&gt; If you specify a publicly available Docker container, Nextflow will seamlessly pull the container in, run the script and generate the output that you’re looking for. *side note on the config you will need to specify docker enabled as true.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;cpus&lt;/code&gt; This specifies the amount of CPUs you wish to run for this process. You can also specify memory options and will help in autoscaling your cloud computation needs. In general this option is useful if you are using VMs of varying size and works quite well with Google Cloud.&lt;/p&gt;
+&lt;h4 id=&quot;inputs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#inputs&quot; aria-label=&quot;inputs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Inputs&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  input:
+  tuple val(sample_id), file(reads_file) from fastqc_reads&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;Channel.fromFilePairs&lt;/code&gt; method generates a tuple &lt;code class=&quot;language-text&quot;&gt;[wildcard value, [the pair of files for processing]]&lt;/code&gt;. Read &lt;a href=&quot;https://www.nextflow.io/docs/latest/channel.html#fromfilepairs&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;here&lt;/a&gt; for full documentation.&lt;/p&gt;
+&lt;p&gt;So when we call it into the input, we assign the variable name &lt;code class=&quot;language-text&quot;&gt;sample_id&lt;/code&gt; to the wildcard value and call the files &lt;code class=&quot;language-text&quot;&gt;reads_file&lt;/code&gt;. As a side note, if you need to access the first file you can call &lt;code class=&quot;language-text&quot;&gt;reads_file[0]&lt;/code&gt; to do so and the second file is &lt;code class=&quot;language-text&quot;&gt;reads_file[1]&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;outputs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#outputs&quot; aria-label=&quot;outputs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Outputs&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  output:
+  file &quot;*_fastqc.{zip,html}&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here we are telling nextflow to expect a zip file and a html file from the output of fastqc. Since we declared &lt;code class=&quot;language-text&quot;&gt;publishDir&lt;/code&gt; above, nextflow will then copy these files to the report directory.&lt;/p&gt;
+&lt;h4 id=&quot;script&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#script&quot; aria-label=&quot;script permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Script&lt;/h4&gt;
+&lt;p&gt;Finally, let’s tell nextflow how to run fastqc!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  script:
+  &quot;&quot;&quot;
+  fastqc $reads_file -o . --threads ${task.cpus}
+  &quot;&quot;&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;A couple of comments. &lt;code class=&quot;language-text&quot;&gt;-o .&lt;/code&gt; tells fastqc to place the output in the current working directory - this will be located in nextflow’s work directory. &lt;code class=&quot;language-text&quot;&gt;--threads ${task.cpus}&lt;/code&gt; is how we parallelise fastqc to take advantage of the available cpus for this process.&lt;/p&gt;
+&lt;h3 id=&quot;4-here-is-how-the-pipeline-continues&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-here-is-how-the-pipeline-continues&quot; aria-label=&quot;4 here is how the pipeline continues permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Here is how the pipeline continues&lt;/h3&gt;
+&lt;p&gt;The code below is hopefully pretty straightforward. The output from bowtie2 is split into two channels &lt;code class=&quot;language-text&quot;&gt;aligned_ch&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;stats_ch&lt;/code&gt;. &lt;code class=&quot;language-text&quot;&gt;stat_ch&lt;/code&gt; is sent to samtools to run flagstat and &lt;code class=&quot;language-text&quot;&gt;aligned_ch&lt;/code&gt; continues on for onward processing in the next steps of the pipeline.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;process bowtie2 {
+    container &apos;biocontainers/bowtie2:v2.4.1_cv1&apos;
+    cpus 16
+
+    input:
+    tuple val(sample_id), file(reads_file) from reads_for_alignment
+    file db from bowtie2_db_ch
+
+    output:
+    tuple val(sample_id), file(&apos;*.sam&apos;) into aligned_ch, stats_ch
+
+    script:
+    &quot;&quot;&quot;
+    tar -xvf $db
+    bowtie2 -t -p ${task.cpus} -x bowtie2/GRCh38_bowtie2 -1 ${reads_file[0]} -2 ${reads_file[1]} -S ${sample_id}.sam
+    &quot;&quot;&quot;
+}
+
+process samtools_flagstat {
+    publishDir &quot;$params.outdir/samtools_flagstat/&quot;
+    container &apos;biocontainers/samtools:v1.9-4-deb_cv1&apos;
+    cpus 16
+    tag &quot;$sample_id&quot;
+
+    input:
+    tuple val(sample_id), file(sam_file) from stats_ch
+
+    output:
+    path &quot;${sample_id}_flagstat.txt&quot;
+
+    script:
+    &quot;&quot;&quot;
+    samtools flagstat -@ ${task.cpus} $sam_file &gt; ${sample_id}_flagstat.txt
+    &quot;&quot;&quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;summary&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#summary&quot; aria-label=&quot;summary permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The above is a simple introduction to using nextflow to pull in containers and orchestrate a pipeline. It is well worth investing some time to automate your pipeline - write your code once and use it forever!&lt;/p&gt;
+&lt;p&gt;More importantly, this is one step closer to creating your cloud genomics supercomputer. We will cover this next.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Getting Started with Docker for Bioinformatics]]></title><description><![CDATA[Stop wasting your time installing every single bioinformatic tool. Just call the container in from the cloud and go.]]></description><link>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
