@@ -29,10 +29,6 @@ const Layout = ({ children, title, description, socialImage = "" }: Props) => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={metaImageUrl} />
-        <meta
-          name="google-site-verification"
-          content="PssJHrMlknaDqnY9daDTb6-0T4IoxzcuLx6X8NUJD38"
-        />
       </Helmet>
       {children}
     </div>
