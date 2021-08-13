@@ -10,13 +10,13 @@ tags:
   - "Docker"
   - "Snakemake"
   - "Nextflow"
-description: "Now you know how to run bioinformatics software in Docker containers, it's time to connect them up."
+description: "Now that you know how to run bioinformatics software in Docker containers, it's time to connect them up."
 socialImage: "/media/pipeline.jpg"
 ---
 
 ![Create your bioinformatics pipeline](/media/pipeline.jpg)
 
-Now you know how to run bioinformatics software in Docker containers, it's time to connect them up. If you've missed the last post the link is here: [Getting started with Docker for bioinformatics.](/posts/getting-started-with-docker-for-bioinformatics)
+Now that you know how to run bioinformatics software in Docker containers, it's time to connect them up. If you've missed the last post the link is here: [Getting started with Docker for bioinformatics.](/posts/getting-started-with-docker-for-bioinformatics)
 
 ## Content Overview
 
