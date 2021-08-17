@@ -1,4 +1,372 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 13 Aug 2021 11:14:03 GMT</lastBuildDate><item><title><![CDATA[How to Create Your Bioinformatics Pipeline with Nextflow]]></title><description><![CDATA[Now that you know how to run bioinformatics software in Docker containers, it's time to connect them up.]]></description><link>https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</guid><pubDate>Thu, 12 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 17 Aug 2021 13:49:05 GMT</lastBuildDate><item><title><![CDATA[Setting Up Azure with Nextflow]]></title><description><![CDATA[How to set up your own cloud supercomputer.]]></description><link>https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</guid><pubDate>Wed, 18 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dcaaae8931fa427839223d1a6670cc72/dbec1/azure_nextflow.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcDOikK//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERAiD/2gAIAQEAAQUCy4PVLx//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAADAAAAAAAAAAAAAAAAAAAAASD/2gAIAQEABj8CHP8A/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAIDFR4f/aAAgBAQABPyEaYa1B8Kv/2gAMAwEAAgADAAAAEIjP/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Qp//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/EIf/xAAZEAEAAwEBAAAAAAAAAAAAAAABESExABD/2gAIAQEAAT8QfRJLZcw0LXAeBRp6WG98/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/dcaaae8931fa427839223d1a6670cc72/8ac56/azure_nextflow.webp 240w,
+/static/dcaaae8931fa427839223d1a6670cc72/d3be9/azure_nextflow.webp 480w,
+/static/dcaaae8931fa427839223d1a6670cc72/e46b2/azure_nextflow.webp 960w,
+/static/dcaaae8931fa427839223d1a6670cc72/f992d/azure_nextflow.webp 1440w,
+/static/dcaaae8931fa427839223d1a6670cc72/882b9/azure_nextflow.webp 1920w,
+/static/dcaaae8931fa427839223d1a6670cc72/76078/azure_nextflow.webp 1933w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/dcaaae8931fa427839223d1a6670cc72/09b79/azure_nextflow.jpg 240w,
+/static/dcaaae8931fa427839223d1a6670cc72/7cc5e/azure_nextflow.jpg 480w,
+/static/dcaaae8931fa427839223d1a6670cc72/6a068/azure_nextflow.jpg 960w,
+/static/dcaaae8931fa427839223d1a6670cc72/644c5/azure_nextflow.jpg 1440w,
+/static/dcaaae8931fa427839223d1a6670cc72/0f98f/azure_nextflow.jpg 1920w,
+/static/dcaaae8931fa427839223d1a6670cc72/dbec1/azure_nextflow.jpg 1933w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/dcaaae8931fa427839223d1a6670cc72/6a068/azure_nextflow.jpg&quot;
+            alt=&quot;Setting up azure with nextflow&quot;
+            title=&quot;Setting up azure with nextflow&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;We will cover getting your nextflow pipeline up and running in the cloud using Azure. First thing to note, this will take quite a number of hours if not a few days so sit back, grab a coffee and take your time working through each section.&lt;/p&gt;
+&lt;h3 id=&quot;useful-references&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useful-references&quot; aria-label=&quot;useful references permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Useful References&lt;/h3&gt;
+&lt;p&gt;Nextflow documentation &lt;a href=&quot;https://www.nextflow.io/docs/edge/azure.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;here&lt;/a&gt;.
+Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducing-nextflow-for-azure-batch.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;table-of-contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#table-of-contents&quot; aria-label=&quot;table of contents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#1-context&quot;&gt;Context&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#2-why-azure-over-gcpaws&quot;&gt;Why Azure over GCP/AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#3-setting-up-your-azure-account&quot;&gt;Setting up your Azure account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#4-configuring-nextflow&quot;&gt;Configuring Nextflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#5-separating-credentials-out-of-nextflow-config&quot;&gt;Separating Credentials Out of Nextflow Config&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#6-running-test-and-production-pipelines&quot;&gt;Running Test and Production Pipelines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#7-requesting-a-quota-increase&quot;&gt;Requesting A Quota Increase&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-context&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-context&quot; aria-label=&quot;1 context permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Context&lt;/h2&gt;
+&lt;p&gt;Let’s start with some context. I’m working with a small team of immunology researchers who are following their scientific questions which has led  into genomics. We don’t have any bioinformatics setup and are starting from nothing - which is probably going to be the case for many newcomers as NGS technology continues to become more accessible (for example Nanopore sequencing).&lt;/p&gt;
+&lt;p&gt;The University has a compute cluster but it is equally challenging to get up and running there as on the cloud. In 2021, if you are starting from scratch, I would recommend a cloud-first approach as the cloud allow scalability way beyond any high performance compute cluster at a fraction of the cost. Also, you can access the cloud from anywhere and do not have to setup VPNs etc. to use a university network.&lt;/p&gt;
+&lt;h2 id=&quot;2-why-azure-over-gcpaws&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-why-azure-over-gcpaws&quot; aria-label=&quot;2 why azure over gcpaws permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Why Azure over GCP/AWS?&lt;/h2&gt;
+&lt;p&gt;When I first attempted to get Nextflow up and running in the cloud, naturally AWS (Amazon Web Services) was the first contender. For those of you new to cloud computing, AWS is the most established player having been around the longest.&lt;/p&gt;
+&lt;p&gt;However, following the Nextflow documentation requires you to create a custom Amazon Machine Image that has awscli installed and no matter how many different attempts I tried, I just couldn’t get it to work properly. I suspect updates to Amazon’s infrastructure have changed the previous instructions available on the internet.&lt;/p&gt;
+&lt;p&gt;After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account. &lt;/p&gt;
+&lt;p&gt;When I contacted Google Support about increasing the quota, they replied and suggested contacting one of their partners and sent a link with a list of maybe a hundred companies, of which you would have no idea who would do bioinformatics. Also, I’m really not interested in going through a third party to get my account running. I might also mention my slight worry that Google does not have a great track record of supporting their non-advertising projects. &lt;a href=&quot;https://killedbygoogle.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;See Here&lt;/a&gt; (I will never forget Google Reader!)&lt;/p&gt;
+&lt;p&gt;Finally, after much time spent on the above two, I had nothing to lose giving Azure a try. Initially, Azure’s interface was almost as complex as AWS. However, once you set it up, &lt;strong&gt;Azure support were the most responsive in getting your vCPU quota up&lt;/strong&gt;. Within 30 minutes of setting up my account I obtained 48 vCPUs and subsequently had it increased to 128 with very little hassle at all.&lt;/p&gt;
+&lt;p&gt;Therefore, if you’re going to do what I did, I would highly recommend you try Azure first and this is my documentation of what worked in the end after about 2 weeks of effort.&lt;/p&gt;
+&lt;h2 id=&quot;3-setting-up-your-azure-account&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-setting-up-your-azure-account&quot; aria-label=&quot;3 setting up your azure account permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Setting Up Your Azure Account&lt;/h2&gt;
+&lt;p&gt;Let’s kick things off. First, sign up for an &lt;a href=&quot;https://azure.microsoft.com&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Azure&lt;/a&gt; account (that pretty much goes without saying).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7e5d99f2bc91885370976a7b549ec841/9b29b/azure_dashboard.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABI0lEQVQoz6VRW07EMAzs/c8Dh4BLrPjhsVugbdL4FTtMWhZY4AdhRZEje+yZySBMlObw2ty2u0bU1rzf4a1F+z16acgkUyqFbSn8MqdlpV7aICK6Fqoe+zGPlAuxIhE1NRvEKgruVVXdezbK6ZHuj+NdyXNEM/dVvEV0Mlv4OYYLLtEmmq4frm7Hm0M6ZMugX83AzgyrPmCxj/gEYwkzo7V11QFR4PZ0ei7Tq4q6VTgy57IsCT19QMRXcAjLPrICHaFbvO9CtKBCcIFEtTrO8M3ErGTwfJvV+7esivSHO1CwC/QhAecCLKzH41jSyrlIytDJxFKKUpfj1bCTWbp3u2FxDoBTIkhKOU1pkpKgGX/DOeND9ga8UAcZ7zx+0P5T/Av8BmwOh45tS7dyAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/7e5d99f2bc91885370976a7b549ec841/8ac56/azure_dashboard.webp 240w,
+/static/7e5d99f2bc91885370976a7b549ec841/d3be9/azure_dashboard.webp 480w,
+/static/7e5d99f2bc91885370976a7b549ec841/e46b2/azure_dashboard.webp 960w,
+/static/7e5d99f2bc91885370976a7b549ec841/f992d/azure_dashboard.webp 1440w,
+/static/7e5d99f2bc91885370976a7b549ec841/882b9/azure_dashboard.webp 1920w,
+/static/7e5d99f2bc91885370976a7b549ec841/93e07/azure_dashboard.webp 3840w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/7e5d99f2bc91885370976a7b549ec841/8ff5a/azure_dashboard.png 240w,
+/static/7e5d99f2bc91885370976a7b549ec841/e85cb/azure_dashboard.png 480w,
+/static/7e5d99f2bc91885370976a7b549ec841/d9199/azure_dashboard.png 960w,
+/static/7e5d99f2bc91885370976a7b549ec841/07a9c/azure_dashboard.png 1440w,
+/static/7e5d99f2bc91885370976a7b549ec841/29114/azure_dashboard.png 1920w,
+/static/7e5d99f2bc91885370976a7b549ec841/9b29b/azure_dashboard.png 3840w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/7e5d99f2bc91885370976a7b549ec841/d9199/azure_dashboard.png&quot;
+            alt=&quot;Azure dashboard&quot;
+            title=&quot;Azure dashboard&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;em&gt;Azure Cloud Dashboard&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Here’s the important bit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Once you have your Azure account, within Azure, you need to create two accounts: one Azure Batch account and one Azure Storage account.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;batch-and-storage-account-creation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#batch-and-storage-account-creation&quot; aria-label=&quot;batch and storage account creation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Batch and Storage Account Creation&lt;/h3&gt;
+&lt;p&gt;Login into Azure Portal and search for ‘batch’ in the top bar. You should then click on Batch accounts. Create a batch account name and the location where you want to run your compute. When you are creating your batch account, it will ask you to associate a storage account - now is a good time to create your storage account as well.&lt;/p&gt;
+&lt;h3 id=&quot;create-a-storage-container&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#create-a-storage-container&quot; aria-label=&quot;create a storage container permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create A Storage Container&lt;/h3&gt;
+&lt;p&gt;Once you have your storage account, enter it and click on containers in the left menubar. Then click ’+ container’ and set up a ‘blob’ - this is equivalent to Amazon S3 and will function as the filesystem Azure Batch will read and write files to.&lt;/p&gt;
+&lt;h3 id=&quot;get-your-account-keys&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#get-your-account-keys&quot; aria-label=&quot;get your account keys permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Get Your Account Keys&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a9df47b02a9e9d26cb19057d229e2c25/9b29b/batch_account.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABMElEQVQoz31S2XLDIAzM//9lXtomtR1sgy4EdLFbJ+nFeDyLpNW1nIyjcmqtiXCax5altapCc5haK8Dt73OawrLEyMLXMYy3QMSJaF4prCln91JKrV6rmrGoecnbV2rzUk9qOVsu7imJWUY+ZoHbvJWHqkSUiFmzPxhPB2LteQBU5BrSZRHPuX6dIwytiKCMwXgnv769nM9nVXV3RoO1wQ0My84HDU3Cssc/kcO8hDDDhiFWkupWtpExrffpfSO7ELv36xOZROEDWEnDMHKMtSCqzJF7llqQFy5UoBh7plLuZCilCp1a3uq0TaVjVoDO/ybVgSLWrboHrimZWIUImMH66h1//0E+lplQOvXXEqO8X4ZpnMZx4NuUhkVZkegXMlrfm1T7lOqQZ+uz/vPIPgBhI4ec8aJL0gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a9df47b02a9e9d26cb19057d229e2c25/8ac56/batch_account.webp 240w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/d3be9/batch_account.webp 480w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/e46b2/batch_account.webp 960w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/f992d/batch_account.webp 1440w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/882b9/batch_account.webp 1920w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/93e07/batch_account.webp 3840w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a9df47b02a9e9d26cb19057d229e2c25/8ff5a/batch_account.png 240w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/e85cb/batch_account.png 480w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/d9199/batch_account.png 960w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/07a9c/batch_account.png 1440w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/29114/batch_account.png 1920w,
+/static/a9df47b02a9e9d26cb19057d229e2c25/9b29b/batch_account.png 3840w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a9df47b02a9e9d26cb19057d229e2c25/d9199/batch_account.png&quot;
+            alt=&quot;Batch account keys&quot;
+            title=&quot;Batch account keys&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Batch account:&lt;/strong&gt; Enter your batch account and click ‘Keys’ in the left menubar. Take a note of the name and key1.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c80903d517baf32ebab81a0791f5dfc9/9b29b/storage_account.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAvElEQVQoz52QwW4DIQxE+f8/XDVVL5WqJC0L2AYMGOKlipScNtnRHEDy89g2nBwTjM6jt/GmzAqRSylN/lb/a1e7eudDCBAAkWJtIr3/u8rmNt37UBsiyjm31qy1AKDfGCMiZua+m4xEGiwiGsTMtVaZ2prvwgFp1ioM+UEi+ycwGJPWKa2jzuTtrd3GeCF5WZbP00cIXlfVQL5r8nvw+XrxzunB5Fkv7Qwx1VLGIRmLlFM6CH99/yCEY/ANKYKKL7aVgH4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/c80903d517baf32ebab81a0791f5dfc9/8ac56/storage_account.webp 240w,
+/static/c80903d517baf32ebab81a0791f5dfc9/d3be9/storage_account.webp 480w,
+/static/c80903d517baf32ebab81a0791f5dfc9/e46b2/storage_account.webp 960w,
+/static/c80903d517baf32ebab81a0791f5dfc9/f992d/storage_account.webp 1440w,
+/static/c80903d517baf32ebab81a0791f5dfc9/882b9/storage_account.webp 1920w,
+/static/c80903d517baf32ebab81a0791f5dfc9/93e07/storage_account.webp 3840w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/c80903d517baf32ebab81a0791f5dfc9/8ff5a/storage_account.png 240w,
+/static/c80903d517baf32ebab81a0791f5dfc9/e85cb/storage_account.png 480w,
+/static/c80903d517baf32ebab81a0791f5dfc9/d9199/storage_account.png 960w,
+/static/c80903d517baf32ebab81a0791f5dfc9/07a9c/storage_account.png 1440w,
+/static/c80903d517baf32ebab81a0791f5dfc9/29114/storage_account.png 1920w,
+/static/c80903d517baf32ebab81a0791f5dfc9/9b29b/storage_account.png 3840w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/c80903d517baf32ebab81a0791f5dfc9/d9199/storage_account.png&quot;
+            alt=&quot;Storage account keys&quot;
+            title=&quot;Storage account keys&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Storage account:&lt;/strong&gt; Enter your storage account and click ‘Access Keys’ in the left menubar. Again, take note of the storage account name and key1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;That’s it for this step. Now it’s time to setup Nextflow.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;4-configuring-nextflow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-configuring-nextflow&quot; aria-label=&quot;4 configuring nextflow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Configuring Nextflow&lt;/h2&gt;
+&lt;p&gt;I’m going to show you an example configuration here and explain it in detail. The details of your configuration will depend on your pipeline and compute requirements. I hope this serves as an easy template to follow. See the previous post for the nextflow pipeline.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profiles {
+  az {
+      params.reads = &apos;az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz&apos;
+      params.outdir = &apos;az://scgenomics/test_reports&apos;
+      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+      params.kraken2_db = &quot;az://scgenomics/k2_standard_8gb_20210517.tar.gz&quot;
+      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
+      params.cpus = 16
+      process.executor = &apos;azurebatch&apos;
+      workDir = &apos;az://scgenomics/work/&apos;
+      azure {
+          storage {
+              accountName = azure_config[&quot;storageAccountName&quot;]
+              accountKey = azure_config[&quot;storageAccountKey&quot;]
+          }
+          batch {
+              location = &apos;uksouth&apos;
+              accountName = azure_config[&quot;batchAccountName&quot;]
+              accountKey = azure_config[&quot;batchAccountKey&quot;]
+              autoPoolMode = true
+              pools {
+                  auto {
+                      vmType = &apos;Standard_D16_v3&apos;
+                      maxVmCount = 8
+                      autoScale = true
+                  }
+              }
+          }
+      }
+  }
+  az_prod {
+      params.reads = &apos;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&apos;
+      params.outdir = &apos;az://scgenomics/reports&apos;
+      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+      params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
+      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
+      params.cpus = 16
+      process.executor = &apos;azurebatch&apos;
+      workDir = &apos;az://scgenomics/production_work/&apos;
+      azure {
+          storage {
+              accountName = azure_config[&quot;storageAccountName&quot;]
+              accountKey = azure_config[&quot;storageAccountKey&quot;]
+          }
+          batch {
+              location = &apos;uksouth&apos;
+              accountName = azure_config[&quot;batchAccountName&quot;]
+              accountKey = azure_config[&quot;batchAccountKey&quot;]
+              autoPoolMode = true
+              pools {
+                  auto {
+                      vmType = &apos;Standard_D16_v3&apos;
+                      maxVmCount = 8
+                      autoScale = true
+                  }
+              }
+          }
+      }
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;create-test-and-production-profiles&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#create-test-and-production-profiles&quot; aria-label=&quot;create test and production profiles permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Create test and production profiles&lt;/h3&gt;
+&lt;p&gt;In your nextflow.config file - set up profiles. I’ve set up two profiles which are almost identical. One is for testing and the other is when you actually want to run the real workflow. In the following example my test profile is named ‘az’ and the production profile is ‘az_prod’. Feel free to change it to what you want.&lt;/p&gt;
+&lt;h3 id=&quot;lets-break-it-down&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lets-break-it-down&quot; aria-label=&quot;lets break it down permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Let’s break it down&lt;/h3&gt;
+&lt;p&gt;First, let’s start with pipeline parameters. This will probably be different to your application. I’ve identified where my data resides and where I want my reports to be placed.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.reads = &apos;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&apos;
+  params.outdir = &apos;az://scgenomics/reports&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;2-major-points-to-note-here&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-major-points-to-note-here&quot; aria-label=&quot;2 major points to note here permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2 Major Points to Note Here&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+  params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
+  params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt; Azure’s containers doesn’t work like a real filesystem. When using reference databases I found that the pipeline doesn’t read folders. What I’ve done is zipped up the reference DBs and unzipped them in the process so that the database is copied over to the VM.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Second Point&lt;/strong&gt; I would upload a copy of the reference database to your storage account. This is because pulling files from your storage account to the VM is really fast whereas if you asked the VM to download the database from the original external servers you are going to cause two major problems:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It’s much slower downloading a database from S3 to Azure.&lt;/li&gt;
+&lt;li&gt;You’re going to incur high bandwidth transfer costs both for yourself and for the team hosting the database. Not a great idea to download 20GB everytime you run a single process.&lt;/li&gt;
+&lt;li&gt;Be nice and considerate to the kind folks who host the databases&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Therefore, download a single copy of the reference database, zip it up and put it in your storage container.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.cpus = 16&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This just allows me to tweak the number of cores and is completely optional. My local machine has only 4 while I use 16 core VMs on Azure. On the process side of Nextflow I declare the cpus option as a variable that allows me to tweak the entire pipeline with a change of a single number.&lt;/p&gt;
+&lt;p&gt;Here’s a brief snippet to give you an idea (pipeline.nf file):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;process bowtie2 {
+    container &apos;biocontainers/bowtie2:v2.4.1_cv1&apos;
+    cpus &quot;$params.cpus&quot;.toInteger()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;finally-the-magic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#finally-the-magic&quot; aria-label=&quot;finally the magic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finally the magic&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  process.executor = &apos;azurebatch&apos;
+  workDir = &apos;az://scgenomics/production_work/&apos;
+  azure {
+      storage {
+          accountName = azure_config[&quot;storageAccountName&quot;]
+          accountKey = azure_config[&quot;storageAccountKey&quot;]
+      }
+      batch {
+          location = &apos;uksouth&apos;
+          accountName = azure_config[&quot;batchAccountName&quot;]
+          accountKey = azure_config[&quot;batchAccountKey&quot;]
+          autoPoolMode = true
+          pools {
+              auto {
+                  vmType = &apos;Standard_D16_v3&apos;
+                  maxVmCount = 8
+                  autoScale = true
+              }
+          }
+      }
+  }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This block configures Azure Batch settings. You will see that I run &lt;code class=&quot;language-text&quot;&gt;Standard_D16_v3&lt;/code&gt; machines and I use up to 8 VMs for my pipeline. Have a look at &lt;a href=&quot;https://azure.microsoft.com/en-gb/pricing/details/virtual-machines/series/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Azure’s VMs&lt;/a&gt; to have an idea of what machines are available. Your settings for this will be entirely dependent on your quotas and what you’re trying to run. Since kraken2 requires 64GB of RAM those are the VMs I’ve selected.&lt;/p&gt;
+&lt;h2 id=&quot;5-separating-credentials-out-of-nextflow-config&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-separating-credentials-out-of-nextflow-config&quot; aria-label=&quot;5 separating credentials out of nextflow config permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Separating Credentials Out of Nextflow Config&lt;/h2&gt;
+&lt;p&gt;I’m assuming you are using git to version track your code. There are other tutorials on how to do that so look it up if you don’t. Personally I commit my code to GitHub and would suggest you do something similar as it will allow further cool automations that I will cover in the future.&lt;/p&gt;
+&lt;p&gt;In the above section you will notice this block of code which is different from what Nextflow’s documentation is.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;accountName = azure_config[&quot;batchAccountName&quot;]
+accountKey = azure_config[&quot;batchAccountKey&quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I’m going to explain how to separate out your credentials from your nextflow.config file. You will often hear people scream &lt;strong&gt;‘Don’t commit your credentials to git!’&lt;/strong&gt; They are right of course - if people get hold of your credentials they could run their pipelines on your credit card!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;However, how to avoid doing this is often unclear and leaves beginners wondering what they are supposed to do instead..&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;how-i-separate-credentials-out&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-i-separate-credentials-out&quot; aria-label=&quot;how i separate credentials out permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How I Separate Credentials Out&lt;/h3&gt;
+&lt;p&gt;I have my credentials in a separate JSON file named &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; that is added to the &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file to avoid committing that to the repo.&lt;/p&gt;
+&lt;p&gt;Here is the json file which is literally 6 lines that you can fill in and rename to &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+    &quot;storageAccountName&quot;: &quot;&quot;,
+    &quot;storageAccountKey&quot;: &quot;&quot;,
+    &quot;batchAccountName&quot;: &quot;&quot;,
+    &quot;batchAccountKey&quot;: &quot;&quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Make sure you add the line &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; to your &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file. If you don’t have &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt;, create one.&lt;/p&gt;
+&lt;p&gt;Now open &lt;code class=&quot;language-text&quot;&gt;nextflow.config&lt;/code&gt; and at the top here’s what I’ve got:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import groovy.json.JsonSlurper
+def JsonSlurper = new JsonSlurper()
+azure_config = JsonSlurper.parse(new File(&quot;./credentials.json&quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This allows nextflow.config to read your &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; file which is in the same directory as the config file.&lt;/p&gt;
+&lt;p&gt;Side note: due to relative file naming you do need to run nextflow in the root directory of your repo.&lt;/p&gt;
+&lt;p&gt;That’s it, 9 lines of code and a &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file to protect you from exposing your sensitive information on the internet!&lt;/p&gt;
+&lt;h2 id=&quot;6-running-test-and-production-pipelines&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-running-test-and-production-pipelines&quot; aria-label=&quot;6 running test and production pipelines permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Running Test and Production Pipelines&lt;/h2&gt;
+&lt;p&gt;To run my test pipeline (my pipeline file is named pipeline.nf, other common names include main.nf):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nextflow pipeline.nf -resume -profile az&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To run production:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nextflow pipeline.nf -resume -profile az_prod&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can watch Azure Batch spin up VMs in Azure Portal.&lt;/p&gt;
+&lt;h2 id=&quot;7-requesting-a-quota-increase&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-requesting-a-quota-increase&quot; aria-label=&quot;7 requesting a quota increase permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. Requesting A Quota Increase&lt;/h2&gt;
+&lt;p&gt;Go to your batch account, click ‘quotas’ in the sidebar and then there is a button ‘Request quota increase’. Fill that in for your desired VM and Microsoft Support will hopefully quickly approve that.&lt;/p&gt;
+&lt;h2 id=&quot;whats-next&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#whats-next&quot; aria-label=&quot;whats next permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What’s next?&lt;/h2&gt;
+&lt;p&gt;The above steps should get you up and running initially on your own cloud supercomputer. However, you will quickly realise that this launches the pipeline from your local machine and as you know, real production pipelines can run for hours. During this time, your computer needs to remain active as it is the main controller for scheduling and arranging jobs.&lt;/p&gt;
+&lt;p&gt;In a future article, I will cover launching pipelines from a cloud server or ‘head node’ and using &lt;code class=&quot;language-text&quot;&gt;screen&lt;/code&gt; to keep long running processes active. This will let you launch pipelines from anywhere and turn off your main computer. You can even code directly on your cloud machine using VSCode Remote. Once you’ve tried this you will never go back!&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to Create Your Bioinformatics Pipeline with Nextflow]]></title><description><![CDATA[Now that you know how to run bioinformatics software in Docker containers, it's time to connect them up.]]></description><link>https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</guid><pubDate>Thu, 12 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
