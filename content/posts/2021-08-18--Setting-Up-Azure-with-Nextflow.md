@@ -12,7 +12,7 @@ tags:
   - "Cloud computing"
   - "DevOps"
 description: "How to set up your own cloud supercomputer."
-socialImage: "/media/pipeline.jpg"
+socialImage: "/media/azure_nextflow.jpg"
 ---
 
 ![Setting up azure with nextflow](/media/azure_nextflow.jpg)
