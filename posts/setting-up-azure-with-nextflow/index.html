@@ -125,7 +125,7 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
 <h2 id="2-why-azure-over-gcpaws" style="position:relative;"><a href="#2-why-azure-over-gcpaws" aria-label="2 why azure over gcpaws permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Why Azure over GCP/AWS?</h2>
 <p>When I first attempted to get Nextflow up and running in the cloud, naturally AWS (Amazon Web Services) was the first contender. For those of you new to cloud computing, AWS is the most established player having been around the longest.</p>
 <p>However, following the Nextflow documentation requires you to create a custom Amazon Machine Image that has awscli installed and no matter how many different attempts I tried, I just couldn’t get it to work properly. I suspect updates to Amazon’s infrastructure have changed the previous instructions available on the internet.</p>
-<p>After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account. </p>
+<p>After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account.</p>
 <p>When I contacted Google Support about increasing the quota, they replied and suggested contacting one of their partners and sent a link with a list of maybe a hundred companies, of which you would have no idea who would do bioinformatics. Also, I’m really not interested in going through a third party to get my account running. I might also mention my slight worry that Google does not have a great track record of supporting their non-advertising projects. <a href="https://killedbygoogle.com/" target="_blank" rel="nofollow noopener noreferrer">See Here</a> (I will never forget Google Reader!)</p>
 <p>Finally, after much time spent on the above two, I had nothing to lose giving Azure a try. Initially, Azure’s interface was almost as complex as AWS. However, once you set it up, <strong>Azure support were the most responsive in getting your vCPU quota up</strong>. Within 30 minutes of setting up my account I obtained 48 vCPUs and subsequently had it increased to 128 with very little hassle at all.</p>
 <p>Therefore, if you’re going to do what I did, I would highly recommend you try Azure first and this is my documentation of what worked in the end after about 2 weeks of effort.</p>
@@ -285,29 +285,29 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
 <p><strong>That’s it for this step. Now it’s time to setup Nextflow.</strong></p>
 <h2 id="4-configuring-nextflow" style="position:relative;"><a href="#4-configuring-nextflow" aria-label="4 configuring nextflow permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Configuring Nextflow</h2>
 <p>I’m going to show you an example configuration here and explain it in detail. The details of your configuration will depend on your pipeline and compute requirements. I hope this serves as an easy template to follow. See the previous post for the nextflow pipeline.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">profiles {
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">profiles {
   az {
-      params.reads = 'az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz'
-      params.outdir = 'az://scgenomics/test_reports'
-      params.bowtie2_reference_index = "az://scgenomics/bt2_index.tar.gz"
-      params.kraken2_db = "az://scgenomics/k2_standard_8gb_20210517.tar.gz"
-      params.metaphlan_db = "az://scgenomics/metaphlan_db.tar.gz"
+      params.reads = &#39;az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz&#39;
+      params.outdir = &#39;az://scgenomics/test_reports&#39;
+      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+      params.kraken2_db = &quot;az://scgenomics/k2_standard_8gb_20210517.tar.gz&quot;
+      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
       params.cpus = 16
-      process.executor = 'azurebatch'
-      workDir = 'az://scgenomics/work/'
+      process.executor = &#39;azurebatch&#39;
+      workDir = &#39;az://scgenomics/work/&#39;
       azure {
           storage {
-              accountName = azure_config["storageAccountName"]
-              accountKey = azure_config["storageAccountKey"]
+              accountName = azure_config[&quot;storageAccountName&quot;]
+              accountKey = azure_config[&quot;storageAccountKey&quot;]
           }
           batch {
-              location = 'uksouth'
-              accountName = azure_config["batchAccountName"]
-              accountKey = azure_config["batchAccountKey"]
+              location = &#39;uksouth&#39;
+              accountName = azure_config[&quot;batchAccountName&quot;]
+              accountKey = azure_config[&quot;batchAccountKey&quot;]
               autoPoolMode = true
               pools {
                   auto {
-                      vmType = 'Standard_D16_v3'
+                      vmType = &#39;Standard_D16_v3&#39;
                       maxVmCount = 8
                       autoScale = true
                   }
@@ -316,27 +316,27 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
       }
   }
   az_prod {
-      params.reads = 'az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz'
-      params.outdir = 'az://scgenomics/reports'
-      params.bowtie2_reference_index = "az://scgenomics/bt2_index.tar.gz"
-      params.kraken2_db = "az://scgenomics/k2_standard_20210517.tar.gz"
-      params.metaphlan_db = "az://scgenomics/metaphlan_db.tar.gz"
+      params.reads = &#39;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&#39;
+      params.outdir = &#39;az://scgenomics/reports&#39;
+      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+      params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
+      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
       params.cpus = 16
-      process.executor = 'azurebatch'
-      workDir = 'az://scgenomics/production_work/'
+      process.executor = &#39;azurebatch&#39;
+      workDir = &#39;az://scgenomics/production_work/&#39;
       azure {
           storage {
-              accountName = azure_config["storageAccountName"]
-              accountKey = azure_config["storageAccountKey"]
+              accountName = azure_config[&quot;storageAccountName&quot;]
+              accountKey = azure_config[&quot;storageAccountKey&quot;]
           }
           batch {
-              location = 'uksouth'
-              accountName = azure_config["batchAccountName"]
-              accountKey = azure_config["batchAccountKey"]
+              location = &#39;uksouth&#39;
+              accountName = azure_config[&quot;batchAccountName&quot;]
+              accountKey = azure_config[&quot;batchAccountKey&quot;]
               autoPoolMode = true
               pools {
                   auto {
-                      vmType = 'Standard_D16_v3'
+                      vmType = &#39;Standard_D16_v3&#39;
                       maxVmCount = 8
                       autoScale = true
                   }
@@ -349,12 +349,12 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
 <p>In your nextflow.config file - set up profiles. I’ve set up two profiles which are almost identical. One is for testing and the other is when you actually want to run the real workflow. In the following example my test profile is named ‘az’ and the production profile is ‘az_prod’. Feel free to change it to what you want.</p>
 <h3 id="lets-break-it-down" style="position:relative;"><a href="#lets-break-it-down" aria-label="lets break it down permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Let’s break it down</h3>
 <p>First, let’s start with pipeline parameters. This will probably be different to your application. I’ve identified where my data resides and where I want my reports to be placed.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  params.reads = 'az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz'
-  params.outdir = 'az://scgenomics/reports'</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">  params.reads = &#39;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&#39;
+  params.outdir = &#39;az://scgenomics/reports&#39;</code></pre></div>
 <h4 id="2-major-points-to-note-here" style="position:relative;"><a href="#2-major-points-to-note-here" aria-label="2 major points to note here permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2 Major Points to Note Here</h4>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  params.bowtie2_reference_index = "az://scgenomics/bt2_index.tar.gz"
-  params.kraken2_db = "az://scgenomics/k2_standard_20210517.tar.gz"
-  params.metaphlan_db = "az://scgenomics/metaphlan_db.tar.gz"</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">  params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
+  params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
+  params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;</code></pre></div>
 <p><strong>Important</strong> Azure’s containers doesn’t work like a real filesystem. When using reference databases I found that the pipeline doesn’t read folders. What I’ve done is zipped up the reference DBs and unzipped them in the process so that the database is copied over to the VM.</p>
 <p><strong>Second Point</strong> I would upload a copy of the reference database to your storage account. This is because pulling files from your storage account to the VM is really fast whereas if you asked the VM to download the database from the original external servers you are going to cause two major problems:</p>
 <ol>
@@ -363,28 +363,28 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
 <li>Be nice and considerate to the kind folks who host the databases</li>
 </ol>
 <p><strong>Therefore, download a single copy of the reference database, zip it up and put it in your storage container.</strong></p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  params.cpus = 16</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">  params.cpus = 16</code></pre></div>
 <p>This just allows me to tweak the number of cores and is completely optional. My local machine has only 4 while I use 16 core VMs on Azure. On the process side of Nextflow I declare the cpus option as a variable that allows me to tweak the entire pipeline with a change of a single number.</p>
 <p>Here’s a brief snippet to give you an idea (pipeline.nf file):</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">process bowtie2 {
-    container 'biocontainers/bowtie2:v2.4.1_cv1'
-    cpus "$params.cpus".toInteger()</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">process bowtie2 {
+    container &#39;biocontainers/bowtie2:v2.4.1_cv1&#39;
+    cpus &quot;$params.cpus&quot;.toInteger()</code></pre></div>
 <h3 id="finally-the-magic" style="position:relative;"><a href="#finally-the-magic" aria-label="finally the magic permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Finally the magic</h3>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  process.executor = 'azurebatch'
-  workDir = 'az://scgenomics/production_work/'
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">  process.executor = &#39;azurebatch&#39;
+  workDir = &#39;az://scgenomics/production_work/&#39;
   azure {
       storage {
-          accountName = azure_config["storageAccountName"]
-          accountKey = azure_config["storageAccountKey"]
+          accountName = azure_config[&quot;storageAccountName&quot;]
+          accountKey = azure_config[&quot;storageAccountKey&quot;]
       }
       batch {
-          location = 'uksouth'
-          accountName = azure_config["batchAccountName"]
-          accountKey = azure_config["batchAccountKey"]
+          location = &#39;uksouth&#39;
+          accountName = azure_config[&quot;batchAccountName&quot;]
+          accountKey = azure_config[&quot;batchAccountKey&quot;]
           autoPoolMode = true
           pools {
               auto {
-                  vmType = 'Standard_D16_v3'
+                  vmType = &#39;Standard_D16_v3&#39;
                   maxVmCount = 8
                   autoScale = true
               }
@@ -395,32 +395,32 @@ Nextflow blog post <a href="https://www.nextflow.io/blog/2021/introducing-nextfl
 <h2 id="5-separating-credentials-out-of-nextflow-config" style="position:relative;"><a href="#5-separating-credentials-out-of-nextflow-config" aria-label="5 separating credentials out of nextflow config permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Separating Credentials Out of Nextflow Config</h2>
 <p>I’m assuming you are using git to version track your code. There are other tutorials on how to do that so look it up if you don’t. Personally I commit my code to GitHub and would suggest you do something similar as it will allow further cool automations that I will cover in the future.</p>
 <p>In the above section you will notice this block of code which is different from what Nextflow’s documentation is.</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">accountName = azure_config["batchAccountName"]
-accountKey = azure_config["batchAccountKey"]</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">accountName = azure_config[&quot;batchAccountName&quot;]
+accountKey = azure_config[&quot;batchAccountKey&quot;]</code></pre></div>
 <p>I’m going to explain how to separate out your credentials from your nextflow.config file. You will often hear people scream <strong>‘Don’t commit your credentials to git!’</strong> They are right of course - if people get hold of your credentials they could run their pipelines on your credit card!</p>
 <p><strong>However, how to avoid doing this is often unclear and leaves beginners wondering what they are supposed to do instead..</strong></p>
 <h3 id="how-i-separate-credentials-out" style="position:relative;"><a href="#how-i-separate-credentials-out" aria-label="how i separate credentials out permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How I Separate Credentials Out</h3>
 <p>I have my credentials in a separate JSON file named <code class="language-text">credentials.json</code> that is added to the <code class="language-text">.gitignore</code> file to avoid committing that to the repo.</p>
 <p>Here is the json file which is literally 6 lines that you can fill in and rename to <code class="language-text">credentials.json</code></p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">{
-    "storageAccountName": "",
-    "storageAccountKey": "",
-    "batchAccountName": "",
-    "batchAccountKey": ""
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">{
+    &quot;storageAccountName&quot;: &quot;&quot;,
+    &quot;storageAccountKey&quot;: &quot;&quot;,
+    &quot;batchAccountName&quot;: &quot;&quot;,
+    &quot;batchAccountKey&quot;: &quot;&quot;
 }</code></pre></div>
 <p>Make sure you add the line <code class="language-text">credentials.json</code> to your <code class="language-text">.gitignore</code> file. If you don’t have <code class="language-text">.gitignore</code>, create one.</p>
 <p>Now open <code class="language-text">nextflow.config</code> and at the top here’s what I’ve got:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">import groovy.json.JsonSlurper
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">import groovy.json.JsonSlurper
 def JsonSlurper = new JsonSlurper()
-azure_config = JsonSlurper.parse(new File("./credentials.json"))</code></pre></div>
+azure_config = JsonSlurper.parse(new File(&quot;./credentials.json&quot;))</code></pre></div>
 <p>This allows nextflow.config to read your <code class="language-text">credentials.json</code> file which is in the same directory as the config file.</p>
 <p>Side note: due to relative file naming you do need to run nextflow in the root directory of your repo.</p>
 <p>That’s it, 9 lines of code and a <code class="language-text">.gitignore</code> file to protect you from exposing your sensitive information on the internet!</p>
 <h2 id="6-running-test-and-production-pipelines" style="position:relative;"><a href="#6-running-test-and-production-pipelines" aria-label="6 running test and production pipelines permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6. Running Test and Production Pipelines</h2>
 <p>To run my test pipeline (my pipeline file is named pipeline.nf, other common names include main.nf):</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">nextflow pipeline.nf -resume -profile az</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">nextflow pipeline.nf -resume -profile az</code></pre></div>
 <p>To run production:</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">nextflow pipeline.nf -resume -profile az_prod</code></pre></div>
+<div class="gatsby-highlight" data-language="sh"><pre class="language-sh"><code class="language-sh">nextflow pipeline.nf -resume -profile az_prod</code></pre></div>
 <p>You can watch Azure Batch spin up VMs in Azure Portal.</p>
 <h2 id="7-requesting-a-quota-increase" style="position:relative;"><a href="#7-requesting-a-quota-increase" aria-label="7 requesting a quota increase permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>7. Requesting A Quota Increase</h2>
 <p>Go to your batch account, click ‘quotas’ in the sidebar and then there is a button ‘Request quota increase’. Fill that in for your desired VM and Microsoft Support will hopefully quickly approve that.</p>

@@ -105,18 +105,6 @@
   Link: </component---src-templates-page-template-js-8b64bb5b6162dcc78f90.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/pages/publications/
-  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
-  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
-  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
-  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
-  Link: </component---src-templates-page-template-js-8b64bb5b6162dcc78f90.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/pages/publications/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/state-of-modern-web-development
   Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -129,6 +117,18 @@
   Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/state-of-modern-web-development/page-data.json>; rel=preload; as=fetch; crossorigin
+/pages/publications/
+  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
+  Link: </component---src-templates-page-template-js-8b64bb5b6162dcc78f90.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/pages/publications/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/architectural-approaches-to-building-websites
   Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -153,18 +153,6 @@
   Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/getting-started-with-docker-for-bioinformatics/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/bioinformatics-pipeline-with-nextflow
-  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
-  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
-  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
-  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
-  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
-  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/bioinformatics-pipeline-with-nextflow/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/setting-up-azure-with-nextflow
   Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -177,6 +165,30 @@
   Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/setting-up-azure-with-nextflow/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/launching-nextflow-pipelines-from-the-cloud
+  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/launching-nextflow-pipelines-from-the-cloud/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/bioinformatics-pipeline-with-nextflow
+  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-177bfb7e39d16785d8ef.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/bioinformatics-pipeline-with-nextflow/page-data.json>; rel=preload; as=fetch; crossorigin
 /tag/azure
   Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
@@ -345,6 +357,18 @@
   Link: </component---src-templates-index-template-js-58742d2936ad58100815.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/page/1
+  Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </framework-1e331b2e9d55ebef6dec.js>; rel=preload; as=script
+  Link: </532a2f07-d05f238db5f768b1710d.js>; rel=preload; as=script
+  Link: </dc6a8720040df98778fe970bf6c000a41750d3ae-efc6dda1b9b18befbcb4.js>; rel=preload; as=script
+  Link: </app-f2bfddcfff95ad3c3af5.js>; rel=preload; as=script
+  Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-09e2d09d003a03c09b06.js>; rel=preload; as=script
+  Link: </component---src-templates-index-template-js-58742d2936ad58100815.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/page/1/page-data.json>; rel=preload; as=fetch; crossorigin
 /404.html
   Link: </webpack-runtime-b971c9f2a609e62d6311.js>; rel=preload; as=script
   Link: </styles-407fe62976dc5310c43e.js>; rel=preload; as=script

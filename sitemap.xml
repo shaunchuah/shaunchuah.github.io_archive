@@ -3,12 +3,13 @@
 <url> <loc>https://shaunchuah.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shaunchuah.github.io/pages/publications/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/posts/state-of-modern-web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/pages/publications/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/posts/launching-nextflow-pipelines-from-the-cloud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/posts/bioinformatics-pipeline-with-nextflow</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/azure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -23,4 +24,5 @@
 <url> <loc>https://shaunchuah.github.io/category/bioinformatics</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/category/web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://shaunchuah.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://shaunchuah.github.io/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

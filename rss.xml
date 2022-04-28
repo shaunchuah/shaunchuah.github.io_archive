@@ -1,4 +1,217 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Aug 2021 20:04:57 GMT</lastBuildDate><item><title><![CDATA[Setting Up Azure with Nextflow]]></title><description><![CDATA[How to set up your own cloud supercomputer.]]></description><link>https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</guid><pubDate>Wed, 18 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Shaun Chuah]]></title><description><![CDATA[Gastroenterology registrar. Occasional web developer. Interested in technology.]]></description><link>https://shaunchuah.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 28 Apr 2022 21:41:31 GMT</lastBuildDate><item><title><![CDATA[Launching Nextflow Pipelines from the Cloud]]></title><description><![CDATA[Let's orchestrate your cloud supercomputer.]]></description><link>https://shaunchuah.github.io/posts/launching-nextflow-pipelines-from-the-cloud</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/launching-nextflow-pipelines-from-the-cloud</guid><pubDate>Thu, 28 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/066639ee22cfad45ce7a939174a34430/c3092/orchestra.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQBAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABTuLxBgJ//8QAGhABAQACAwAAAAAAAAAAAAAAAQIDEgARMf/aAAgBAQABBQLCDOGSLydNl781Fr3/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAdEAACAgEFAAAAAAAAAAAAAAAAAQIiIRESUXGB/9oACAEBAAY/ApcpFsdmu4ldpFpemD//xAAcEAEAAgEFAAAAAAAAAAAAAAABABEhMVGBkaH/2gAIAQEAAT8hEQVHsAXJ3VGdi5RaHpiY2nsMAUtzP//aAAwDAQACAAMAAAAQpP8A/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAwEBPxAc7Lf/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QTTIL/8QAHRABAQACAwADAAAAAAAAAAAAAREAIUFRYTGxwf/aAAgBAQABPxBGAQG1iT6xIf8Anh1NOIsQqCR5cSYHBGlgr+YGJphMHG+HxySUBtVr2eZ//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/066639ee22cfad45ce7a939174a34430/8ac56/orchestra.webp 240w,
+/static/066639ee22cfad45ce7a939174a34430/d3be9/orchestra.webp 480w,
+/static/066639ee22cfad45ce7a939174a34430/e46b2/orchestra.webp 960w,
+/static/066639ee22cfad45ce7a939174a34430/f992d/orchestra.webp 1440w,
+/static/066639ee22cfad45ce7a939174a34430/882b9/orchestra.webp 1920w,
+/static/066639ee22cfad45ce7a939174a34430/569e6/orchestra.webp 4048w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/066639ee22cfad45ce7a939174a34430/09b79/orchestra.jpg 240w,
+/static/066639ee22cfad45ce7a939174a34430/7cc5e/orchestra.jpg 480w,
+/static/066639ee22cfad45ce7a939174a34430/6a068/orchestra.jpg 960w,
+/static/066639ee22cfad45ce7a939174a34430/644c5/orchestra.jpg 1440w,
+/static/066639ee22cfad45ce7a939174a34430/0f98f/orchestra.jpg 1920w,
+/static/066639ee22cfad45ce7a939174a34430/c3092/orchestra.jpg 4048w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/066639ee22cfad45ce7a939174a34430/6a068/orchestra.jpg&quot;
+            alt=&quot;Launching nextflow pipelines from the cloud&quot;
+            title=&quot;Launching nextflow pipelines from the cloud&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Slightly overdue post - have been busy running other things but here’s the promised guide on orchestrating a nextflow pipeline from a cloud server.&lt;/p&gt;
+&lt;h2 id=&quot;why-bother-setting-up-another-server-to-manage-your-nextflow-pipeline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#why-bother-setting-up-another-server-to-manage-your-nextflow-pipeline&quot; aria-label=&quot;why bother setting up another server to manage your nextflow pipeline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Why bother setting up another server to manage your Nextflow pipeline?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Avoid premature termination of the pipeline&lt;/strong&gt;. When you run a Nextflow pipeline from your local computer, your local computer is managing the tasks and communicating with Azure as jobs are completed. Depending on the complexity of your pipeline, this may be a long time (couple of days!). If your wi-fi router accidentally comes unplug or the connection is broken, the pipeline will terminate prematurely. While you could recover from this using &lt;code class=&quot;language-text&quot;&gt;-resume&lt;/code&gt;, you can avoid the risks of disconnection by using a cloud server, which is designed to run 24/7, to orchestrate this.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Location independence&lt;/strong&gt;. You can start a pipeline from home (wfh being the consequence of covid) and perhaps go elsewhere and check in later.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Free up your local computer for other things&lt;/strong&gt;. You do not have to keep your local computer running Nextflow constantly - just start the pipeline in the cloud and continue on with your usual day.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;table-of-contents&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#table-of-contents&quot; aria-label=&quot;table of contents permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#1-obtaining-a-cloud-server&quot;&gt;Obtaining a cloud server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#2-logging-in-to-the-server&quot;&gt;Logging in to the server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#3-installation&quot;&gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#4-check-nextflow-works&quot;&gt;Check Nextflow works&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#5-clone-and-run-the-pipeline&quot;&gt;Clone and run the pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#6-use-screen-to-launch-long-running-pipelines&quot;&gt;Use screen to launch long-running pipelines&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;1-obtaining-a-cloud-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-obtaining-a-cloud-server&quot; aria-label=&quot;1 obtaining a cloud server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Obtaining a cloud server&lt;/h2&gt;
+&lt;p&gt;Plenty of hosting providers provide you with access to a VPS (Virtual Private Server) running Ubuntu 20.04. My recommendation is DigitalOcean - fantastic documentation, much cheaper compared to AWS/Azure/GCP, good performance and reliability in my experience. The $5/month server is what I personally use and is more than capable of handling Nextflow.&lt;/p&gt;
+&lt;h3 id=&quot;setting-up-an-ubuntu-server-on-digitalocean&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#setting-up-an-ubuntu-server-on-digitalocean&quot; aria-label=&quot;setting up an ubuntu server on digitalocean permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up an Ubuntu server on DigitalOcean&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/23dcf6640cbf936be06f1012a0ae12cc/8079d/do_droplet_creation.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 107.91666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAYAAADAQbwGAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACtklEQVQ4y5VU2W7cMAz0/39X+xF9WKRA0718W4etw55ypOViESQBKoAQbUmjITliE0LANE3FlmXBMAyw1oLjOI5PTdc+G01KCU4AvHdwzhcwXvLd+OoiWrNtG/phhDG2sJznGfu+l0XOH+0zhq/MG7sBfycgpAMxbOAFZEjz3iPGiHVdy3/OCvoxBQrcEOg6H3gfBTADOednyDxMID3INQVkqvjNwf3cVxiGBLx1B35dD9DnAgvDwUPjOD5ByFhBnHNPEOadBX2ELAynA505QJ9h8SBBNGyCMHQeVGYE5Dp97tF0NHkH1ijMhN1+1JBpGqKGSSPYR78Ur+zJTCKagxsePzSc/xmsSRJSJEZCDenerle0bVvypSFpmMqEM8PiP13PWf6FjMFUc1tG48KO09ni7WIlh7losW27YryMurzf77jdbui6Dufzucz8Z4zB0Pfou7ZYjAENpbJIsYwYfTJRGWgeyUylVHVZNck17vPiP4uSUkTYvBjFuz5EXcXNTascIAhNBf/6rT7BJKOiQ/lpLd+xLbKgMRQafe/M45AwZ04lrCNXP75YBZSiRAnRC1iQeG+zSCjV6hkR6rRY/DjVlBDI2wW/7yt+nr5uGs0ad7z3GZdphxc9GlubBBcZ8p/LgCSaYL5aKYRbJSJJZ9/XonHwZT1fCkV9kebA10KfbYyV1QLM01B0SsBeKprkH3M1yqV8LRzcbxRwi4egz6UobBRObtWnx5k9Up9hfXpVn8yxapI+K1+rLPL2Qm0TgcpeYSPCTqmwUHFrb9Tk81vBtPNQLSWH07jDuIDFrjJvsD6U2fnaA4tRlw9tvpr2SbJ30lj4/JooRVlcwizGeZGMj4YaZCcRFimW22P83pgKttqG+hvHQRI7Ypotukn64WRxH1fxA25jKKxV7K8dPbywTqnq7R9bwLlCGxW9NwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/23dcf6640cbf936be06f1012a0ae12cc/8ac56/do_droplet_creation.webp 240w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/d3be9/do_droplet_creation.webp 480w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/e46b2/do_droplet_creation.webp 960w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/f992d/do_droplet_creation.webp 1440w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/882b9/do_droplet_creation.webp 1920w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/92e50/do_droplet_creation.webp 2100w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/23dcf6640cbf936be06f1012a0ae12cc/8ff5a/do_droplet_creation.png 240w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/e85cb/do_droplet_creation.png 480w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/d9199/do_droplet_creation.png 960w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/07a9c/do_droplet_creation.png 1440w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/29114/do_droplet_creation.png 1920w,
+/static/23dcf6640cbf936be06f1012a0ae12cc/8079d/do_droplet_creation.png 2100w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/23dcf6640cbf936be06f1012a0ae12cc/d9199/do_droplet_creation.png&quot;
+            alt=&quot;DigitalOcean VPS Setup&quot;
+            title=&quot;DigitalOcean VPS Setup&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;server-authentication&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#server-authentication&quot; aria-label=&quot;server authentication permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Server authentication&lt;/h3&gt;
+&lt;p&gt;For authentication, select SSH key to access your server from the terminal (mac/linux) or using PuTTY (windows):
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/56122dae6ab1d3b7e5780f14da02c262/8079d/do_droplet_ssh.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAtElEQVQY05WQ3YoDIQyFff/37NXCVEfNv7GnHQrdq92Gj3DEnISkmMdRO7i3wRIe295o7MxcayHv35GvKLZ212xnIxZzV0O3uCrgh4mIamv4ukAB8nq1K5jFQ3gKDb6AVlIgpEs1RJzZiZ75LYI53csiktbo7PM8tVa73aJWP46YM81S9QnEJ5g8JyhLBI/9ZWQEjCWZz+E/fd8njpM4xd/AbLaYS4pIHaMSNcIK/wI79w7xAE4tmofUMHu1AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/56122dae6ab1d3b7e5780f14da02c262/8ac56/do_droplet_ssh.webp 240w,
+/static/56122dae6ab1d3b7e5780f14da02c262/d3be9/do_droplet_ssh.webp 480w,
+/static/56122dae6ab1d3b7e5780f14da02c262/e46b2/do_droplet_ssh.webp 960w,
+/static/56122dae6ab1d3b7e5780f14da02c262/f992d/do_droplet_ssh.webp 1440w,
+/static/56122dae6ab1d3b7e5780f14da02c262/882b9/do_droplet_ssh.webp 1920w,
+/static/56122dae6ab1d3b7e5780f14da02c262/92e50/do_droplet_ssh.webp 2100w&quot;
+              sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/56122dae6ab1d3b7e5780f14da02c262/8ff5a/do_droplet_ssh.png 240w,
+/static/56122dae6ab1d3b7e5780f14da02c262/e85cb/do_droplet_ssh.png 480w,
+/static/56122dae6ab1d3b7e5780f14da02c262/d9199/do_droplet_ssh.png 960w,
+/static/56122dae6ab1d3b7e5780f14da02c262/07a9c/do_droplet_ssh.png 1440w,
+/static/56122dae6ab1d3b7e5780f14da02c262/29114/do_droplet_ssh.png 1920w,
+/static/56122dae6ab1d3b7e5780f14da02c262/8079d/do_droplet_ssh.png 2100w&quot;
+            sizes=&quot;(max-width: 960px) 100vw, 960px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/56122dae6ab1d3b7e5780f14da02c262/d9199/do_droplet_ssh.png&quot;
+            alt=&quot;DigitalOcean SSH Setup&quot;
+            title=&quot;DigitalOcean SSH Setup&quot;
+            loading=&quot;lazy&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-logging-in-to-the-server&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-logging-in-to-the-server&quot; aria-label=&quot;2 logging in to the server permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Logging in to the server&lt;/h2&gt;
+&lt;p&gt;Once your server is set up, log in to it.&lt;/p&gt;
+&lt;p&gt;Mac/Linux:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;ssh -i &amp;lt;private_key.pem&amp;gt; root@&amp;lt;server_ip&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For Windows I suggest using the PuTTy client. Depending on your choice of VPS and platform, you may wish to consult this guide: &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-20-04&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-installation&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-installation&quot; aria-label=&quot;3 installation permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Installation&lt;/h2&gt;
+&lt;p&gt;Install Java and screen first.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;sudo apt update
+sudo apt install default-jre screen&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We will install Nextflow in /nextflow. You can change this location if you wish.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;cd /nextflow
+curl -s https://get.nextflow.io | bash&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We then need to add this directory to PATH. Doing this allows you to type &lt;code class=&quot;language-text&quot;&gt;nextflow&lt;/code&gt; directly into the terminal. Open .bashrc file to begin.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;nano ~/.bashrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Add the bottom, add the following line:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;export PATH=“/nextflow:$PATH”
+
+# this line is optional
+export NXF_DEFAULT_DSL=1 
+# I am using DSL1 as per the docs when I was setting up my pipeline.
+# If you are using DSL1 you will need to add this to .bashrc.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Save and exit with &lt;code class=&quot;language-text&quot;&gt;Ctrl+X&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;yes&lt;/code&gt;. Next, we need to source the file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;4-check-nextflow-works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-check-nextflow-works&quot; aria-label=&quot;4 check nextflow works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Check Nextflow works&lt;/h2&gt;
+&lt;p&gt;If everything is installed correctly, typing &lt;code class=&quot;language-text&quot;&gt;nextflow&lt;/code&gt; into the terminal should show the program help screen.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;nextflow&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;5-clone-and-run-the-pipeline&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-clone-and-run-the-pipeline&quot; aria-label=&quot;5 clone and run the pipeline permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Clone and run the pipeline&lt;/h2&gt;
+&lt;p&gt;Now it’s time to bring in your pipeline using the power of git.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;cd ~
+git clone &amp;lt;your_nextflow_pipeline_repository&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For example, I would put in&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;git clone https://github.com/shaunchuah/cfdna_nextflow/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;and this will bring in my pipeline at &lt;code class=&quot;language-text&quot;&gt;~/cfdna_nextflow&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For my pipeline I would need to clone &lt;code class=&quot;language-text&quot;&gt;sample_credentials.json&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; and fill it in with my Azure credentials.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;cd ~/cfdna_nextflow
+cp sample_credentials.json credentials.json
+nano credentials.json&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you can launch the pipeline!&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;nextflow pipeline.nf -resume -profile test&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now your cloud server is orchestrating the cloud cluster! But let’s take this one step further…&lt;/p&gt;
+&lt;h2 id=&quot;6-use-screen-to-launch-long-running-pipelines&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-use-screen-to-launch-long-running-pipelines&quot; aria-label=&quot;6 use screen to launch long running pipelines permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Use screen to launch long-running pipelines&lt;/h2&gt;
+&lt;p&gt;Reference: &lt;a href=&quot;https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.howtogeek.com/662422/how-to-use-linuxs-screen-command/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here’s what I do when launching pipelines that may take days to weeks to complete. Create a screen session:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;screen&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If this is the first time, there will be some text. Hit enter and it all disappears but you are now in a screen session. Try any command - eg. &lt;code class=&quot;language-text&quot;&gt;nextflow&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To detach from the screen session, hit &lt;code class=&quot;language-text&quot;&gt;Ctrl+A&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;D&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To list all screen sessions type &lt;code class=&quot;language-text&quot;&gt;screen -ls&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To reattach to the screen session type &lt;code class=&quot;language-text&quot;&gt;screen -r&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I launch my pipelines from within screen and hit &lt;code class=&quot;language-text&quot;&gt;Ctrl+A&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;D&lt;/code&gt; to detach. Now I can safely close my SSH connection to the server and the pipeline will remain running. Reconnect to the server and type &lt;code class=&quot;language-text&quot;&gt;screen -r&lt;/code&gt; and you will see that the pipeline remains running. This nifty trick will help avoid pipelines terminating because of flaky connections and give you true mobility to perform bioinformatics from anywhere with an internet connection.&lt;/p&gt;
+&lt;p&gt;It also means that in 2022, you no longer need powerful desktop computers to run bioinformatics anymore. All you need is a credit card and you can access vast computing power way beyond any single machine is capable of.&lt;/p&gt;
+&lt;p&gt;I hope you’ve found this series helpful. If this has helped you please let me know on Twitter!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Bonus: If you want to take this even further, you could have a powerful cloud server to develop on using VSCode Remote Containers. Check out &lt;a href=&quot;https://github.com/features/codespaces&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;GitHub Codespaces&lt;/a&gt; as an example of this.&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Setting Up Azure with Nextflow]]></title><description><![CDATA[How to set up your own cloud supercomputer.]]></description><link>https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/setting-up-azure-with-nextflow</guid><pubDate>Wed, 18 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
@@ -65,7 +278,7 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
 &lt;h2 id=&quot;2-why-azure-over-gcpaws&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-why-azure-over-gcpaws&quot; aria-label=&quot;2 why azure over gcpaws permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Why Azure over GCP/AWS?&lt;/h2&gt;
 &lt;p&gt;When I first attempted to get Nextflow up and running in the cloud, naturally AWS (Amazon Web Services) was the first contender. For those of you new to cloud computing, AWS is the most established player having been around the longest.&lt;/p&gt;
 &lt;p&gt;However, following the Nextflow documentation requires you to create a custom Amazon Machine Image that has awscli installed and no matter how many different attempts I tried, I just couldn’t get it to work properly. I suspect updates to Amazon’s infrastructure have changed the previous instructions available on the internet.&lt;/p&gt;
-&lt;p&gt;After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account. &lt;/p&gt;
+&lt;p&gt;After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account.&lt;/p&gt;
 &lt;p&gt;When I contacted Google Support about increasing the quota, they replied and suggested contacting one of their partners and sent a link with a list of maybe a hundred companies, of which you would have no idea who would do bioinformatics. Also, I’m really not interested in going through a third party to get my account running. I might also mention my slight worry that Google does not have a great track record of supporting their non-advertising projects. &lt;a href=&quot;https://killedbygoogle.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;See Here&lt;/a&gt; (I will never forget Google Reader!)&lt;/p&gt;
 &lt;p&gt;Finally, after much time spent on the above two, I had nothing to lose giving Azure a try. Initially, Azure’s interface was almost as complex as AWS. However, once you set it up, &lt;strong&gt;Azure support were the most responsive in getting your vCPU quota up&lt;/strong&gt;. Within 30 minutes of setting up my account I obtained 48 vCPUs and subsequently had it increased to 128 with very little hassle at all.&lt;/p&gt;
 &lt;p&gt;Therefore, if you’re going to do what I did, I would highly recommend you try Azure first and this is my documentation of what worked in the end after about 2 weeks of effort.&lt;/p&gt;
@@ -225,29 +438,29 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
 &lt;p&gt;&lt;strong&gt;That’s it for this step. Now it’s time to setup Nextflow.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&quot;4-configuring-nextflow&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-configuring-nextflow&quot; aria-label=&quot;4 configuring nextflow permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. Configuring Nextflow&lt;/h2&gt;
 &lt;p&gt;I’m going to show you an example configuration here and explain it in detail. The details of your configuration will depend on your pipeline and compute requirements. I hope this serves as an easy template to follow. See the previous post for the nextflow pipeline.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;profiles {
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;profiles {
   az {
-      params.reads = &apos;az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz&apos;
-      params.outdir = &apos;az://scgenomics/test_reports&apos;
-      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
-      params.kraken2_db = &quot;az://scgenomics/k2_standard_8gb_20210517.tar.gz&quot;
-      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
+      params.reads = &amp;#39;az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz&amp;#39;
+      params.outdir = &amp;#39;az://scgenomics/test_reports&amp;#39;
+      params.bowtie2_reference_index = &amp;quot;az://scgenomics/bt2_index.tar.gz&amp;quot;
+      params.kraken2_db = &amp;quot;az://scgenomics/k2_standard_8gb_20210517.tar.gz&amp;quot;
+      params.metaphlan_db = &amp;quot;az://scgenomics/metaphlan_db.tar.gz&amp;quot;
       params.cpus = 16
-      process.executor = &apos;azurebatch&apos;
-      workDir = &apos;az://scgenomics/work/&apos;
+      process.executor = &amp;#39;azurebatch&amp;#39;
+      workDir = &amp;#39;az://scgenomics/work/&amp;#39;
       azure {
           storage {
-              accountName = azure_config[&quot;storageAccountName&quot;]
-              accountKey = azure_config[&quot;storageAccountKey&quot;]
+              accountName = azure_config[&amp;quot;storageAccountName&amp;quot;]
+              accountKey = azure_config[&amp;quot;storageAccountKey&amp;quot;]
           }
           batch {
-              location = &apos;uksouth&apos;
-              accountName = azure_config[&quot;batchAccountName&quot;]
-              accountKey = azure_config[&quot;batchAccountKey&quot;]
+              location = &amp;#39;uksouth&amp;#39;
+              accountName = azure_config[&amp;quot;batchAccountName&amp;quot;]
+              accountKey = azure_config[&amp;quot;batchAccountKey&amp;quot;]
               autoPoolMode = true
               pools {
                   auto {
-                      vmType = &apos;Standard_D16_v3&apos;
+                      vmType = &amp;#39;Standard_D16_v3&amp;#39;
                       maxVmCount = 8
                       autoScale = true
                   }
@@ -256,27 +469,27 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
       }
   }
   az_prod {
-      params.reads = &apos;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&apos;
-      params.outdir = &apos;az://scgenomics/reports&apos;
-      params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
-      params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
-      params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;
+      params.reads = &amp;#39;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&amp;#39;
+      params.outdir = &amp;#39;az://scgenomics/reports&amp;#39;
+      params.bowtie2_reference_index = &amp;quot;az://scgenomics/bt2_index.tar.gz&amp;quot;
+      params.kraken2_db = &amp;quot;az://scgenomics/k2_standard_20210517.tar.gz&amp;quot;
+      params.metaphlan_db = &amp;quot;az://scgenomics/metaphlan_db.tar.gz&amp;quot;
       params.cpus = 16
-      process.executor = &apos;azurebatch&apos;
-      workDir = &apos;az://scgenomics/production_work/&apos;
+      process.executor = &amp;#39;azurebatch&amp;#39;
+      workDir = &amp;#39;az://scgenomics/production_work/&amp;#39;
       azure {
           storage {
-              accountName = azure_config[&quot;storageAccountName&quot;]
-              accountKey = azure_config[&quot;storageAccountKey&quot;]
+              accountName = azure_config[&amp;quot;storageAccountName&amp;quot;]
+              accountKey = azure_config[&amp;quot;storageAccountKey&amp;quot;]
           }
           batch {
-              location = &apos;uksouth&apos;
-              accountName = azure_config[&quot;batchAccountName&quot;]
-              accountKey = azure_config[&quot;batchAccountKey&quot;]
+              location = &amp;#39;uksouth&amp;#39;
+              accountName = azure_config[&amp;quot;batchAccountName&amp;quot;]
+              accountKey = azure_config[&amp;quot;batchAccountKey&amp;quot;]
               autoPoolMode = true
               pools {
                   auto {
-                      vmType = &apos;Standard_D16_v3&apos;
+                      vmType = &amp;#39;Standard_D16_v3&amp;#39;
                       maxVmCount = 8
                       autoScale = true
                   }
@@ -289,12 +502,12 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
 &lt;p&gt;In your nextflow.config file - set up profiles. I’ve set up two profiles which are almost identical. One is for testing and the other is when you actually want to run the real workflow. In the following example my test profile is named ‘az’ and the production profile is ‘az_prod’. Feel free to change it to what you want.&lt;/p&gt;
 &lt;h3 id=&quot;lets-break-it-down&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lets-break-it-down&quot; aria-label=&quot;lets break it down permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Let’s break it down&lt;/h3&gt;
 &lt;p&gt;First, let’s start with pipeline parameters. This will probably be different to your application. I’ve identified where my data resides and where I want my reports to be placed.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.reads = &apos;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&apos;
-  params.outdir = &apos;az://scgenomics/reports&apos;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;  params.reads = &amp;#39;az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz&amp;#39;
+  params.outdir = &amp;#39;az://scgenomics/reports&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&quot;2-major-points-to-note-here&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-major-points-to-note-here&quot; aria-label=&quot;2 major points to note here permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2 Major Points to Note Here&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.bowtie2_reference_index = &quot;az://scgenomics/bt2_index.tar.gz&quot;
-  params.kraken2_db = &quot;az://scgenomics/k2_standard_20210517.tar.gz&quot;
-  params.metaphlan_db = &quot;az://scgenomics/metaphlan_db.tar.gz&quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;  params.bowtie2_reference_index = &amp;quot;az://scgenomics/bt2_index.tar.gz&amp;quot;
+  params.kraken2_db = &amp;quot;az://scgenomics/k2_standard_20210517.tar.gz&amp;quot;
+  params.metaphlan_db = &amp;quot;az://scgenomics/metaphlan_db.tar.gz&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt; Azure’s containers doesn’t work like a real filesystem. When using reference databases I found that the pipeline doesn’t read folders. What I’ve done is zipped up the reference DBs and unzipped them in the process so that the database is copied over to the VM.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Second Point&lt;/strong&gt; I would upload a copy of the reference database to your storage account. This is because pulling files from your storage account to the VM is really fast whereas if you asked the VM to download the database from the original external servers you are going to cause two major problems:&lt;/p&gt;
 &lt;ol&gt;
@@ -303,28 +516,28 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
 &lt;li&gt;Be nice and considerate to the kind folks who host the databases&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;Therefore, download a single copy of the reference database, zip it up and put it in your storage container.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  params.cpus = 16&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;  params.cpus = 16&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This just allows me to tweak the number of cores and is completely optional. My local machine has only 4 while I use 16 core VMs on Azure. On the process side of Nextflow I declare the cpus option as a variable that allows me to tweak the entire pipeline with a change of a single number.&lt;/p&gt;
 &lt;p&gt;Here’s a brief snippet to give you an idea (pipeline.nf file):&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;process bowtie2 {
-    container &apos;biocontainers/bowtie2:v2.4.1_cv1&apos;
-    cpus &quot;$params.cpus&quot;.toInteger()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;process bowtie2 {
+    container &amp;#39;biocontainers/bowtie2:v2.4.1_cv1&amp;#39;
+    cpus &amp;quot;$params.cpus&amp;quot;.toInteger()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3 id=&quot;finally-the-magic&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#finally-the-magic&quot; aria-label=&quot;finally the magic permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finally the magic&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  process.executor = &apos;azurebatch&apos;
-  workDir = &apos;az://scgenomics/production_work/&apos;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;  process.executor = &amp;#39;azurebatch&amp;#39;
+  workDir = &amp;#39;az://scgenomics/production_work/&amp;#39;
   azure {
       storage {
-          accountName = azure_config[&quot;storageAccountName&quot;]
-          accountKey = azure_config[&quot;storageAccountKey&quot;]
+          accountName = azure_config[&amp;quot;storageAccountName&amp;quot;]
+          accountKey = azure_config[&amp;quot;storageAccountKey&amp;quot;]
       }
       batch {
-          location = &apos;uksouth&apos;
-          accountName = azure_config[&quot;batchAccountName&quot;]
-          accountKey = azure_config[&quot;batchAccountKey&quot;]
+          location = &amp;#39;uksouth&amp;#39;
+          accountName = azure_config[&amp;quot;batchAccountName&amp;quot;]
+          accountKey = azure_config[&amp;quot;batchAccountKey&amp;quot;]
           autoPoolMode = true
           pools {
               auto {
-                  vmType = &apos;Standard_D16_v3&apos;
+                  vmType = &amp;#39;Standard_D16_v3&amp;#39;
                   maxVmCount = 8
                   autoScale = true
               }
@@ -335,32 +548,32 @@ Nextflow blog post &lt;a href=&quot;https://www.nextflow.io/blog/2021/introducin
 &lt;h2 id=&quot;5-separating-credentials-out-of-nextflow-config&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-separating-credentials-out-of-nextflow-config&quot; aria-label=&quot;5 separating credentials out of nextflow config permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. Separating Credentials Out of Nextflow Config&lt;/h2&gt;
 &lt;p&gt;I’m assuming you are using git to version track your code. There are other tutorials on how to do that so look it up if you don’t. Personally I commit my code to GitHub and would suggest you do something similar as it will allow further cool automations that I will cover in the future.&lt;/p&gt;
 &lt;p&gt;In the above section you will notice this block of code which is different from what Nextflow’s documentation is.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;accountName = azure_config[&quot;batchAccountName&quot;]
-accountKey = azure_config[&quot;batchAccountKey&quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;accountName = azure_config[&amp;quot;batchAccountName&amp;quot;]
+accountKey = azure_config[&amp;quot;batchAccountKey&amp;quot;]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I’m going to explain how to separate out your credentials from your nextflow.config file. You will often hear people scream &lt;strong&gt;‘Don’t commit your credentials to git!’&lt;/strong&gt; They are right of course - if people get hold of your credentials they could run their pipelines on your credit card!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;However, how to avoid doing this is often unclear and leaves beginners wondering what they are supposed to do instead..&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&quot;how-i-separate-credentials-out&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-i-separate-credentials-out&quot; aria-label=&quot;how i separate credentials out permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How I Separate Credentials Out&lt;/h3&gt;
 &lt;p&gt;I have my credentials in a separate JSON file named &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; that is added to the &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file to avoid committing that to the repo.&lt;/p&gt;
 &lt;p&gt;Here is the json file which is literally 6 lines that you can fill in and rename to &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
-    &quot;storageAccountName&quot;: &quot;&quot;,
-    &quot;storageAccountKey&quot;: &quot;&quot;,
-    &quot;batchAccountName&quot;: &quot;&quot;,
-    &quot;batchAccountKey&quot;: &quot;&quot;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;{
+    &amp;quot;storageAccountName&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;storageAccountKey&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;batchAccountName&amp;quot;: &amp;quot;&amp;quot;,
+    &amp;quot;batchAccountKey&amp;quot;: &amp;quot;&amp;quot;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Make sure you add the line &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; to your &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file. If you don’t have &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt;, create one.&lt;/p&gt;
 &lt;p&gt;Now open &lt;code class=&quot;language-text&quot;&gt;nextflow.config&lt;/code&gt; and at the top here’s what I’ve got:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import groovy.json.JsonSlurper
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;import groovy.json.JsonSlurper
 def JsonSlurper = new JsonSlurper()
-azure_config = JsonSlurper.parse(new File(&quot;./credentials.json&quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+azure_config = JsonSlurper.parse(new File(&amp;quot;./credentials.json&amp;quot;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This allows nextflow.config to read your &lt;code class=&quot;language-text&quot;&gt;credentials.json&lt;/code&gt; file which is in the same directory as the config file.&lt;/p&gt;
 &lt;p&gt;Side note: due to relative file naming you do need to run nextflow in the root directory of your repo.&lt;/p&gt;
 &lt;p&gt;That’s it, 9 lines of code and a &lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt; file to protect you from exposing your sensitive information on the internet!&lt;/p&gt;
 &lt;h2 id=&quot;6-running-test-and-production-pipelines&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-running-test-and-production-pipelines&quot; aria-label=&quot;6 running test and production pipelines permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. Running Test and Production Pipelines&lt;/h2&gt;
 &lt;p&gt;To run my test pipeline (my pipeline file is named pipeline.nf, other common names include main.nf):&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nextflow pipeline.nf -resume -profile az&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;nextflow pipeline.nf -resume -profile az&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;To run production:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;nextflow pipeline.nf -resume -profile az_prod&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;nextflow pipeline.nf -resume -profile az_prod&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;You can watch Azure Batch spin up VMs in Azure Portal.&lt;/p&gt;
 &lt;h2 id=&quot;7-requesting-a-quota-increase&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-requesting-a-quota-increase&quot; aria-label=&quot;7 requesting a quota increase permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. Requesting A Quota Increase&lt;/h2&gt;
 &lt;p&gt;Go to your batch account, click ‘quotas’ in the sidebar and then there is a button ‘Request quota increase’. Fill that in for your desired VM and Microsoft Support will hopefully quickly approve that.&lt;/p&gt;
@@ -550,8 +763,7 @@ process samtools_flagstat {
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2 id=&quot;summary&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#summary&quot; aria-label=&quot;summary permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Summary&lt;/h2&gt;
 &lt;p&gt;The above is a simple introduction to using nextflow to pull in containers and orchestrate a pipeline. It is well worth investing some time to automate your pipeline - write your code once and use it forever!&lt;/p&gt;
-&lt;p&gt;More importantly, this is one step closer to creating your cloud genomics supercomputer. We will cover this next.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Getting Started with Docker for Bioinformatics]]></title><description><![CDATA[Stop wasting your time installing every single bioinformatic tool. Just call the container in from the cloud and go.]]></description><link>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;More importantly, this is one step closer to creating your cloud genomics supercomputer. We will cover this next.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Getting Started with Docker for Bioinformatics]]></title><description><![CDATA[Stop wasting your time installing every single bioinformatic tool. Just call the container in from the cloud and go.]]></description><link>https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/getting-started-with-docker-for-bioinformatics</guid><pubDate>Thu, 05 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
@@ -638,6 +850,7 @@ process samtools_flagstat {
         &lt;/picture&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;What is Docker? Here’s a &lt;a href=&quot;https://www.youtube.com/watch?v=Gjnup-PuquQ&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;quick 100 second introduction&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;There are Docker containers for most bioinformatic tools. Instead of installing software, all you have to do is specify the Docker image and you’re ready to run the program!&lt;/p&gt;
 &lt;h2 id=&quot;heres-the-secret&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#heres-the-secret&quot; aria-label=&quot;heres the secret permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Here’s the secret&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;docker run -it -v &amp;#39;&amp;lt;path to your files&amp;gt;:/data&amp;#39; &amp;lt;container of your choice&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -667,8 +880,7 @@ bowtie2 -t -p 4 -x bowtie2/GRCh38_bowtie2 -1 reads/sample_id/read_1.fastq.gz -2 
 &lt;/ul&gt;
 &lt;p&gt;Give this a try - 10-15 mins of experimenting will save you days of time and you will never have to manage dependencies anymore!&lt;/p&gt;
 &lt;h2 id=&quot;what-next&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#what-next&quot; aria-label=&quot;what next permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What next?&lt;/h2&gt;
-&lt;p&gt;Once you have got your head round using Docker for your bioinformatics, the next thing that comes to mind is to automate the containers locally on your computer so that you can easily run 100 read files at the touch of a button. I will cover this in a future article.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4 Major Architectural Approaches to Building Websites in 2021]]></title><description><![CDATA[This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves: What are the real differences in the frameworks?]]></description><link>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;Once you have got your head round using Docker for your bioinformatics, the next thing that comes to mind is to automate the containers locally on your computer so that you can easily run 100 read files at the touch of a button. I will cover this in a future article.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[4 Major Architectural Approaches to Building Websites in 2021]]></title><description><![CDATA[This article is for people who are new to web development, lost in the myriad of web frameworks and are asking themselves: What are the real differences in the frameworks?]]></description><link>https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/architectural-approaches-to-building-websites</guid><pubDate>Thu, 01 Jul 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
@@ -756,8 +968,7 @@ bowtie2 -t -p 4 -x bowtie2/GRCh38_bowtie2 -1 reads/sample_id/read_1.fastq.gz -2 
 &lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;The right architectural choice will depend on the scope of what you’re building and the expected scale/audience. Brochure websites are different to blogs which are different to web applications.&lt;/p&gt;
 &lt;p&gt;Something important to note is that web projects are often unpredictable and tend to grow in size and complexity with time. You may reach a point where you need to consider a rework of the architecture (usually this is a good problem to have if your site traffic is growing!).&lt;/p&gt;
-&lt;p&gt;Choosing the right approach and avoiding premature optimisation will avoid wasted effort and speed your time to deployment.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The State of Modern Web Development]]></title><description><![CDATA[I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share...]]></description><link>https://shaunchuah.github.io/posts/state-of-modern-web-development</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/state-of-modern-web-development</guid><pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+&lt;p&gt;Choosing the right approach and avoiding premature optimisation will avoid wasted effort and speed your time to deployment.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[The State of Modern Web Development]]></title><description><![CDATA[I've had to dabble in a bit of web development over the past year as part of my research fellowship and having not done this for a while, I have accrued a couple of thoughts I want to share...]]></description><link>https://shaunchuah.github.io/posts/state-of-modern-web-development</link><guid isPermaLink="false">https://shaunchuah.github.io/posts/state-of-modern-web-development</guid><pubDate>Tue, 29 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 960px; &quot;
     &gt;
@@ -826,5 +1037,4 @@ bowtie2 -t -p 4 -x bowtie2/GRCh38_bowtie2 -1 reads/sample_id/read_1.fastq.gz -2 
 &lt;h2 id=&quot;the-web-is-still-the-future&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-web-is-still-the-future&quot; aria-label=&quot;the web is still the future permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Web is still the Future&lt;/h2&gt;
 &lt;p&gt;If there is one thing you can bet on, it’s that the web is still the future. Although some may feel that the space has matured and there are a ton of tech giants, when you go into actual industries you will see that there are still a ton of things in the real world that haven’t made the technological shift.&lt;/p&gt;
 &lt;p&gt;As someone who has been doing more real world stuff than being in the tech space, seeing the state of the web in 2021 has pretty much blown my mind. Companies that manage to get their heads round the above changes will rise while those who ignore them will have an increasingly tough time.&lt;/p&gt;
-&lt;p&gt;If you need any further convincing, I will just say one word - covid.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology&lt;/em&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;If you need any further convincing, I will just say one word - covid.&lt;/p&gt;</content:encoded></item></channel></rss>
