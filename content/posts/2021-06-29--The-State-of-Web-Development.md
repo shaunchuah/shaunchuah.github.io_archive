@@ -69,5 +69,3 @@ If there is one thing you can bet on, it's that the web is still the future. Alt
 As someone who has been doing more real world stuff than being in the tech space, seeing the state of the web in 2021 has pretty much blown my mind. Companies that manage to get their heads round the above changes will rise while those who ignore them will have an increasingly tough time.
 
 If you need any further convincing, I will just say one word - covid.
-
-_Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology_

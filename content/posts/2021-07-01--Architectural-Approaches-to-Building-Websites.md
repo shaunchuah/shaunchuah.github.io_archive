@@ -86,5 +86,3 @@ The right architectural choice will depend on the scope of what you're building 
 Something important to note is that web projects are often unpredictable and tend to grow in size and complexity with time. You may reach a point where you need to consider a rework of the architecture (usually this is a good problem to have if your site traffic is growing!).
 
 Choosing the right approach and avoiding premature optimisation will avoid wasted effort and speed your time to deployment.
-
-_Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology_

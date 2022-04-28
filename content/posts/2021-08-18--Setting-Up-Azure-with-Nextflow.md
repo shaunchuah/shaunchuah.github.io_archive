@@ -46,7 +46,7 @@ When I first attempted to get Nextflow up and running in the cloud, naturally AW
 
 However, following the Nextflow documentation requires you to create a custom Amazon Machine Image that has awscli installed and no matter how many different attempts I tried, I just couldn't get it to work properly. I suspect updates to Amazon's infrastructure have changed the previous instructions available on the internet.
 
-After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account. 
+After Amazon, I tried Google Cloud using their Cloud Life Sciences API and Nextflow. It was incredibly easy to get things up and running however I soon ran into limitations on vCPU quota. Google limits new accounts to 8 vCPUs even though you have put your credit card on and upgraded your account.
 
 When I contacted Google Support about increasing the quota, they replied and suggested contacting one of their partners and sent a link with a list of maybe a hundred companies, of which you would have no idea who would do bioinformatics. Also, I'm really not interested in going through a third party to get my account running. I might also mention my slight worry that Google does not have a great track record of supporting their non-advertising projects. [See Here](https://killedbygoogle.com/) (I will never forget Google Reader!)
 
@@ -89,8 +89,7 @@ Once you have your storage account, enter it and click on containers in the left
 
 I'm going to show you an example configuration here and explain it in detail. The details of your configuration will depend on your pipeline and compute requirements. I hope this serves as an easy template to follow. See the previous post for the nextflow pipeline.
 
-
-```
+```sh
 profiles {
   az {
       params.reads = 'az://scgenomics/test_data/*/*_{R1,R2}_*.fastq.gz'
@@ -153,7 +152,6 @@ profiles {
 }
 ```
 
-
 ### Create test and production profiles
 
 In your nextflow.config file - set up profiles. I've set up two profiles which are almost identical. One is for testing and the other is when you actually want to run the real workflow. In the following example my test profile is named 'az' and the production profile is 'az_prod'. Feel free to change it to what you want.
@@ -162,14 +160,14 @@ In your nextflow.config file - set up profiles. I've set up two profiles which a
 
 First, let's start with pipeline parameters. This will probably be different to your application. I've identified where my data resides and where I want my reports to be placed.
 
-```
+```sh
   params.reads = 'az://scgenomics/data/*/*_{R1,R2}_*.fastq.gz'
   params.outdir = 'az://scgenomics/reports'
 ```
 
 #### 2 Major Points to Note Here
 
-```
+```sh
   params.bowtie2_reference_index = "az://scgenomics/bt2_index.tar.gz"
   params.kraken2_db = "az://scgenomics/k2_standard_20210517.tar.gz"
   params.metaphlan_db = "az://scgenomics/metaphlan_db.tar.gz"
@@ -185,14 +183,15 @@ First, let's start with pipeline parameters. This will probably be different to 
 
 **Therefore, download a single copy of the reference database, zip it up and put it in your storage container.**
 
-```
+```sh
   params.cpus = 16
 ```
 
 This just allows me to tweak the number of cores and is completely optional. My local machine has only 4 while I use 16 core VMs on Azure. On the process side of Nextflow I declare the cpus option as a variable that allows me to tweak the entire pipeline with a change of a single number.
 
 Here's a brief snippet to give you an idea (pipeline.nf file):
-```
+
+```sh
 process bowtie2 {
     container 'biocontainers/bowtie2:v2.4.1_cv1'
     cpus "$params.cpus".toInteger()
@@ -200,7 +199,7 @@ process bowtie2 {
 
 ### Finally the magic
 
-```
+```sh
   process.executor = 'azurebatch'
   workDir = 'az://scgenomics/production_work/'
   azure {
@@ -232,7 +231,7 @@ I'm assuming you are using git to version track your code. There are other tutor
 
 In the above section you will notice this block of code which is different from what Nextflow's documentation is.
 
-```
+```sh
 accountName = azure_config["batchAccountName"]
 accountKey = azure_config["batchAccountKey"]
 ```
@@ -241,15 +240,13 @@ I'm going to explain how to separate out your credentials from your nextflow.con
 
 **However, how to avoid doing this is often unclear and leaves beginners wondering what they are supposed to do instead..**
 
-
-
 ### How I Separate Credentials Out
 
 I have my credentials in a separate JSON file named `credentials.json` that is added to the `.gitignore` file to avoid committing that to the repo.
 
 Here is the json file which is literally 6 lines that you can fill in and rename to `credentials.json`
 
-```
+```sh
 {
     "storageAccountName": "",
     "storageAccountKey": "",
@@ -262,7 +259,7 @@ Make sure you add the line `credentials.json` to your `.gitignore` file. If you 
 
 Now open `nextflow.config` and at the top here's what I've got:
 
-```
+```sh
 import groovy.json.JsonSlurper
 def JsonSlurper = new JsonSlurper()
 azure_config = JsonSlurper.parse(new File("./credentials.json"))
@@ -278,13 +275,13 @@ That's it, 9 lines of code and a `.gitignore` file to protect you from exposing 
 
 To run my test pipeline (my pipeline file is named pipeline.nf, other common names include main.nf):
 
-```
+```sh
 nextflow pipeline.nf -resume -profile az
 ```
 
 To run production:
 
-```
+```sh
 nextflow pipeline.nf -resume -profile az_prod
 ```
 

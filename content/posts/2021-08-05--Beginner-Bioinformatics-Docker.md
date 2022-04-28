@@ -22,6 +22,7 @@ After a stint on Google, you decide that you want to run bwa-mem/bowtie2 and the
 
 ![Docker logo](/media/docker2.png)
 
+What is Docker? Here's a [quick 100 second introduction](https://www.youtube.com/watch?v=Gjnup-PuquQ).
 
 There are Docker containers for most bioinformatic tools. Instead of installing software, all you have to do is specify the Docker image and you're ready to run the program!
 
@@ -74,6 +75,3 @@ Give this a try - 10-15 mins of experimenting will save you days of time and you
 ## What next?
 
 Once you have got your head round using Docker for your bioinformatics, the next thing that comes to mind is to automate the containers locally on your computer so that you can easily run 100 read files at the touch of a button. I will cover this in a future article.
-
-
-_Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology_

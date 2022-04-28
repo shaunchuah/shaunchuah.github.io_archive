@@ -226,5 +226,3 @@ process samtools_flagstat {
 The above is a simple introduction to using nextflow to pull in containers and orchestrate a pipeline. It is well worth investing some time to automate your pipeline - write your code once and use it forever!
 
 More importantly, this is one step closer to creating your cloud genomics supercomputer. We will cover this next.
-
-_Stay tuned for more articles where I will explore the technological shifts happening not just in tech but also health and biology_
